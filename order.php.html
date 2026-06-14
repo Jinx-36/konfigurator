@@ -1,0 +1,239 @@
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+ <title>Windows Configurator</title>
+<meta property="og:title" content="Windows Configurator" /> 
+<meta property="og:description" content="Windows Configurator"/> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #c9d6df, #eef2f3);
+    }
+
+    .contact-wrapper {
+        width: 100%;
+        max-width: 520px;
+        padding: 32px 20px;
+    }
+
+    .contact-card {
+        background: rgba(255,255,255,0.92);
+        border-radius: 18px;
+        padding: 32px 28px 26px;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.75);
+    }
+
+    .contact-title {
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    .contact-subtitle {
+        text-align: center;
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 26px;
+    }
+
+    .form-row {
+        margin-bottom: 14px;
+    }
+
+    .form-row.inline {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 10px;
+    }
+
+    label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #666;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(0,0,0,0.08);
+        background: rgba(245,248,250,0.95);
+        font-size: 14px;
+        color: #333;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #a0a7b4;
+        font-weight: 300;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #0078b8;
+        background: #ffffff;
+        box-shadow: 0 0 0 1px rgba(0,120,184,0.15);
+    }
+
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    .badge-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 18px;
+        font-size: 11px;
+        color: #8a8a8a;
+    }
+
+    .badge-row span.badge {
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: rgba(0,120,184,0.08);
+        color: #0078b8;
+        font-weight: 500;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+
+    .submit-btn {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 999px;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 0.16em;
+        font-weight: 500;
+        background: #0078b8; /* plava kao na slici */
+        color: #fff;
+        cursor: pointer;
+        transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
+        box-shadow: 0 10px 22px rgba(0,120,184,0.35);
+    }
+
+    .submit-btn:hover {
+        background: #026ba3;
+        transform: translateY(-1px);
+        box-shadow: 0 14px 30px rgba(0,120,184,0.4);
+    }
+
+    .submit-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 6px 14px rgba(0,120,184,0.32);
+    }
+
+    @media (max-width: 480px) {
+        .contact-card {
+            padding: 24px 18px 20px;
+        }
+        .contact-title {
+            font-size: 16px;
+        }
+        .contact-subtitle {
+            font-size: 12px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="contact-wrapper">
+    <div class="contact-card">
+        <h2 class="contact-title">Contact information</h2>
+        <p class="contact-subtitle">Send us your details for a non-binding offer.</p>
+
+        <form action="order.php.html" method="post">
+            <div class="form-row">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="ime" placeholder="First and Last Name" required>
+            </div>
+
+            <div class="form-row inline">
+                <div>
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.de" required>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="telefon" placeholder="+49 ...">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="adresa" placeholder="Street, postal code, city">
+            </div>
+
+           
+
+            <div class="form-row">
+                <label for="message">Note</label>
+                <textarea id="message" name="napomena" placeholder="Remark..."></textarea>
+            </div>
+
+            <div class="badge-row">
+                <span class="badge">Inquiry</span>
+                <span>By submitting this form, you will receive non-binding price information.</span>
+            </div>
+
+            <button type="submit" class="submit-btn">Send</button>
+			
+			
+			
+			
+			
+ 			
+			
+			
+			
+			
+			
+        </form>
+    </div>
+</div>
+
+</body>
+</html> 

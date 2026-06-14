@@ -1,0 +1,736 @@
+
+
+
+
+
+
+
+
+  
+  
+
+ 
+
+ 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="doors/css/style.css" rel="stylesheet">
+<title>KONFIGURATOR.BA</title>
+
+<meta property="og:title" content="KONFIGURATOR.BA" /> 
+<meta property="og:description" content="KONFIGURATOR.BA"/> 
+<meta property="og:image" content="https://konfigurator.ba/demo_windows/doors/img/fb.jpg" />	
+<link rel="shortcut icon" type="image/x-icon" href="doors/img/favicon.png">
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    :root{
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: rgba(15, 23, 42, .10);
+      --shadow: 0 8px 24px rgba(15, 23, 42, .08);
+      --radius: 16px;
+    }
+
+    *{ box-sizing: border-box; }
+    html,body{ height: 100%; }
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      color: var(--text);
+      background: #f6f8fb;
+    }
+
+    /* Header */
+    .wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 18px 40px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+    }
+    .brand h1{
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: .2px;
+    }
+    .brand p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .actions{
+      display:flex;
+      gap: 10px;
+      align-items:center;
+    }
+    .btn{
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.7);
+      backdrop-filter: blur(8px);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .btn:hover{ box-shadow: var(--shadow); }
+
+    /* Grid */
+    .grid{
+	 
+      display:grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow:hidden;
+      box-shadow: var(--shadow);
+      display:flex;
+      flex-direction:column;
+
+      /* kljucno za ispis: ne lomi karticu */
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .thumb{
+      aspect-ratio: 3 / 4;          /* kao katalog slika vrata */
+      background: linear-gradient(135deg, rgba(15,23,42,.06), rgba(15,23,42,.02));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 40px;
+    }
+
+    #door_size{width:110px;
+	height:220px;}
+	
+	
+	
+    .meta{
+      padding: 12px 12px 14px;
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+    }
+    .model{
+      font-weight: 800;
+      letter-spacing: .2px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .collection{
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Mali "tag" izgled (opcionalno) */
+    .pill{
+      align-self:flex-start;
+      margin-top: 2px;
+      font-size: 11px;
+      color: rgba(15,23,42,.75);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 8px;
+      background: rgba(248,250,252,.9);
+    }
+
+    /* PRINT */
+    @media print{
+      :root{
+        --bg:#ffffff;
+        --shadow:none;
+      }
+      body{
+        background: #fff !important;
+      }
+      .wrap{
+        max-width: none;
+        padding: 0;
+        margin: 0;
+      }
+      .actions{ display:none !important; }
+
+      .topbar{
+        margin: 0 0 10mm 0;
+        padding: 0 0 4mm 0;
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* A4 layout + margine */
+      @page{
+        size: A4;
+        margin: 10mm;
+      }
+
+      /* U ispisu fiksiramo 4 stupca (možeš 3 ako želiš) */
+      .grid{
+        gap: 6mm;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .card{
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow:none;
+      }
+
+      .thumb{
+        padding: 4mm;
+      }
+
+      .model{ font-size: 10pt; }
+      .collection{ font-size: 9pt; }
+      .pill{ font-size: 8pt; }
+    }
+	
+	
+	#logoX{width:222px;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+      <a href="doors.html#"><img src="doors/img/logo.png" id="logoX"></a>
+      </div>
+
+      <div class="actions">
+<a href="doors/login.php.html"><div class="btn">Login</div></a>
+      </div>
+    </div>
+
+
+
+
+
+
+<div style="width:100%; margin-top:60px;  margin-bottom:20px;"><h3>EXCLUSIVE</h3></div>
+
+<section class="grid">
+   
+   
+     <!-- Primjeri — zamijeni slikama i nazivima --> 
+	<article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=609&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Connecticut10.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 609</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=610&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Connecticut11.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 610</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=611&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Connecticut12.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 611</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=612&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Connecticut13.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 612</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=613&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Connecticut14.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 613</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=608&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Connecticut9.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 608</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=573&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Tennesse3.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 573</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=690&amp;&amp;kon_id=29573.html"><img src="doors/modeli/TEXASWOOD.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 690</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=696&amp;&amp;kon_id=29573.html"><img src="doors/modeli/WASHINGTON_WOOD.jpg" id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 696</div>
+          <div class="collection">EXCLUSIVE</div>
+ 
+        </div>
+      </article>	 
+	  
+
+      <!-- Dodaj koliko god treba kartica -->
+    </section>
+
+
+
+
+<div style="width:100%; margin-top:60px;  margin-bottom:20px;"><h3>ELEGANT</h3></div>
+
+
+
+    <section class="grid">
+   
+     <!-- Primjeri — zamijeni slikama i nazivima --> 
+	<article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=378&amp;&amp;kon_id=29573.html"><img src="doors/modeli/01010_VAR.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 378</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=379&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0301M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 379</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=314&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0301GM1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 314</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=316&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0401GM1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 316</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=388&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0401M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 388</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=266&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0402GC.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 266</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=384&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0402M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 384</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=267&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0403GC.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 267</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=385&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0403M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 385</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=295&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0404_I.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 295</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=381&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0404M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 381</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=386&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0404M_VAR.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 386</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=304&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0511MI1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 304</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=405&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0513M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 405</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=327&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0514GM1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 327</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=328&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0515GM1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 328</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=408&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0516M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 408</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=409&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0517M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 409</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=412&amp;&amp;kon_id=29573.html"><img src="doors/modeli/0602M.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 412</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=336&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1002GF1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 336</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=338&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1004GM1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 338</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=340&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1006GF1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 340</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=341&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1008GF1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 341</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=342&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1009GM1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 342</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=345&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1011GF1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 345</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=344&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1011GM1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 344</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=271&amp;&amp;kon_id=29573.html"><img src="doors/modeli/1012GC.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 271</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=675&amp;&amp;kon_id=29573.html"><img src="doors/modeli/FLORIDA3.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 675</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=676&amp;&amp;kon_id=29573.html"><img src="doors/modeli/HAWAII1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 676</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=679&amp;&amp;kon_id=29573.html"><img src="doors/modeli/HAWAII6.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 679</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=624&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Kentucky1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 624</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=635&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Kentucky12.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 635</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=636&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Kentucky13.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 636</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=625&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Kentucky2.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 625</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=643&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Kentucky20.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 643</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=680&amp;&amp;kon_id=29573.html"><img src="doors/modeli/MONTANA1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 680</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=681&amp;&amp;kon_id=29573.html"><img src="doors/modeli/MONTANA4.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 681</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=571&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Tennesse1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 571</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=574&amp;&amp;kon_id=29573.html"><img src="doors/modeli/Tennesse4.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 574</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=691&amp;&amp;kon_id=29573.html"><img src="doors/modeli/WASHINGTON1.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 691</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article><article class="card">
+        <div class="thumb">
+<a href="doors/updmodel.php%3Fmodel=695&amp;&amp;kon_id=29573.html"><img src="doors/modeli/WASHINGTON_POCKET.jpg"  id="door_size"/></a>
+        </div>
+        <div class="meta">
+          <div class="model">HF 695</div>
+          <div class="collection">ELEGANT</div>
+ 
+        </div>
+      </article>	 
+	  
+
+      <!-- Dodaj koliko god treba kartica -->
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  </div>
+</body>
+</html>

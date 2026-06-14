@@ -1,0 +1,5479 @@
+
+
+
+
+
+
+
+
+  
+ 
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>KONFIGURATOR.BA</title>
+<meta property="og:title" content="KONFIGURATOR.BA" /> 
+<meta property="og:description" content="KONFIGURATOR.BA"/> 
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+  
+
+  
+
+
+
+  
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+ 
+
+  
+
+
+
+ 
+
+ 
+  
+  <style>
+::-moz-selection { /* Code for Firefox */
+ 
+  background:rgba(0,0,0,0);
+}
+
+::selection {
+
+  background:rgba(0,0,0,0);
+}
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@100..900&display=swap');
+body{
+font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+</style>
+
+
+<style type="text/css">
+ 
+
+
+
+body{
+position:relative;
+position:fixed;
+ 
+background:#C6C6C7;
+background: linear-gradient(141deg, rgba(254,254,254,1) 0%, rgba(255,255,255,1) 36%, rgba(142,159,166,1) 94%);
+  width:100%;
+  height:84vh;
+ 
+  
+ overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
+
+
+
+
+
+
+         .btn-grad {background: radial-gradient(circle at top, #e87388 , #3b365e);}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+#cart{
+width:56px;
+ 
+position:absolute;
+right:60px;
+top:80px;
+
+ padding:15px;
+border-radius: 20px;
+background:#1D2738;
+z-index:99999999;
+ z-index:99999999;
+ border:rgba(255,255,255,0.7) solid 1px;
+
+}
+
+
+
+#model_img{
+width:56px;
+ 
+position:absolute;
+right:166px;
+top:80px;
+
+ padding:15px;
+border-radius: 20px;
+background-image: radial-gradient(circle, #641e43, #55193a, #471431, #390f28, #2c0a1f);
+z-index:99999999;
+ z-index:99999999;
+border:rgba(255,255,255,0.7) solid 1px;
+}
+
+ 
+
+
+
+#rotate{
+width:30px;
+position:absolute;
+right:100px;
+bottom:calc(50% + 20px);
+z-index:999999;
+}
+
+
+
+
+#rotate2{
+width:30px;
+position:absolute;
+right:100px;
+bottom:calc(50% - 20px);
+z-index:999999;
+}
+
+
+#rotate3{
+width:30px;
+position:absolute;
+right:100px;
+bottom:calc(50% - 70px);
+z-index:999999;
+}
+
+#rotate_hover{
+opacity:1;
+}
+ 
+ 
+
+ 
+#model{
+width:200px;
+height:400px;
+margin:10px;
+ 
+}
+
+
+
+#scroller{
+width:90%;
+height:490px;
+position:absolute;
+left:50px;
+bottom:40px;
+ 
+white-space:nowrap;
+overflow-x:auto;
+
+
+}
+
+
+
+ 
+
+
+
+ 
+#price{
+position:absolute;
+right:20px;
+width:400px;
+height:60px;
+top:260px;
+ 
+font-size:44px;
+color:#FFFFFF;
+text-align:left;
+font-weight:500;
+letter-spacing:5px;
+}
+
+
+#model{
+position:absolute;
+left:50px;
+width:300px;
+height:60px;
+top:260px;
+
+font-size:44px;
+color:#FFFFFF;
+text-align:left;
+font-weight:500;
+letter-spacing:5px;
+}
+
+
+
+#tab_color1{
+width:140px;
+height:46px;
+line-height:46px;
+position:absolute;
+right:30px;
+top:200px;
+color:#FFFFFF;
+
+text-align:center;
+border-radius: 10px;
+font-size:13px;
+background: linear-gradient(145deg, #3f484a, #353c3e);
+ z-index:99999999;
+}
+
+#tab_color2{
+width:140px;
+height:46px;
+line-height:46px;
+position:absolute;
+right:30px;
+top:260px;
+font-size:13px;
+color:#FFFFFF;
+
+text-align:center;
+
+border-radius: 10px;
+background: linear-gradient(145deg, #3f484a, #353c3e);
+ z-index:99999999;
+ 	 
+}
+
+
+#tab_color3{
+width:160px;
+height:66px;
+line-height:66px;
+position:absolute;
+right:30px;
+top:700px;
+color:#FFFFFF;
+
+text-align:center;
+
+border-radius: 20px;
+background: linear-gradient(145deg, #3f484a, #353c3e);	
+z-index:99999999;		 
+}
+
+
+#tab_color4{
+width:160px;
+height:66px;
+line-height:66px;
+position:absolute;
+right:30px;
+top:800px;
+color:#FFFFFF;
+
+text-align:center;
+
+border-radius: 20px;
+background: linear-gradient(145deg, #3f484a, #353c3e);	
+z-index:99999999;		 
+}
+
+
+.col_activ_tab{ 
+box-shadow: inset 28px 28px 57px #46494B,
+            inset -28px -28px 57px #46494B;
+			
+			
+ 
+z-index:99999999;}
+
+
+#tab_color1:hover{opacity:0.8;}
+#tab_color2:hover{opacity:0.8;}
+#tab_color3:hover{opacity:0.8;}
+#tab_color4:hover{opacity:0.8;}
+
+
+
+ 
+
+
+
+#right_side{
+width:10%;
+height:100%;
+
+position:absolute;
+right:0px;
+top:0px;
+}
+
+#central_side{
+width:75%;
+height:100%;
+
+position:absolute;
+left:10%;
+top:0px;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+#enquire{
+position:absolute;
+right:20px;
+bottom:170px;
+height:60px;
+color:#111111;
+font-size:13px;
+
+width:340px;
+line-height:10px;
+vertical-align:top;
+z-index:999999;
+ 
+}
+
+
+#enquire_btn{
+ width: 52px;
+height: 52px;
+z-index:999999;
+border-radius: 50%;
+display:inline-block;
+text-align:center;
+display:inline-block;
+background:#46494B;
+  
+}
+
+
+#enquire_btn:hover{
+background:#333333;  
+}
+ 
+#enquire_txt{
+width:220px;
+height:52px;
+display:inline-block;
+line-height:56px;
+vertical-align:top;
+text-align:left;
+letter-spacing:1px;
+z-index:999999;
+}
+
+
+
+#enquire_btn:hover{
+background:#1F203F;
+}
+
+#enq{height:30px; padding-top:10px; z-index:999999;}
+
+
+
+
+#price_boxX{
+position:absolute;
+right:20px;
+bottom:70px;
+height:60px;
+color:#111111;
+
+font-size:12px;
+
+width:200px;
+line-height:30px;
+vertical-align:top;
+text-align:left;
+letter-spacing:2px;
+}
+
+#price_box2{
+width:100%;
+height:32px;
+display:inline-block;
+line-height:26px;
+vertical-align:top;
+text-align:left;
+letter-spacing:1px;
+font-size:26px;
+color:#111111;
+}
+
+ 
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+ 
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+ 
+
+:root {
+  --d: 10500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+ 
+.box {
+ 
+  
+  border: 0.25rem solid;
+ 
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+  border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+  animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+#small_logo{
+
+width:40px;
+margin-top:20px;
+margin-bottom:20px;
+}
+ 
+ #open_close_box{
+position:absolute;
+right:40px;
+top:150px;
+width:170px;
+text-align:right;
+
+z-index:99999999999999999999999999;
+ 
+}
+
+#ocicon{
+width:33px;
+height:30px;
+margin:10px;
+z-index:999999999999999999999;
+
+}
+
+#ocicon:hover{
+opacity:0.1;
+}
+
+ #logo_2{
+position:absolute;
+width:200px;
+right:10px;
+top:10px;
+  z-index:999999999999999999999999;
+  display:block;
+  transform-style: preserve-3d;   perspective: 500000000px; 
+  transform:translateZ(-600px);
+}
+
+
+@media only screen and (max-width:1000px) {
+#logo_2{
+position:absolute;
+width:300px;
+height:auto;
+left:20px;
+top:20px;
+  z-index:999999999;
+  display:block;
+}
+
+
+
+#rotate{
+width:50px;
+position:absolute;
+right:50px;
+top:300px;
+z-index:999999;
+}
+
+
+
+
+#rotate2{
+width:50px;
+position:absolute;
+right:50px;
+top:380px;
+z-index:999999;
+}
+
+
+#rotate3{
+width:50px;
+position:absolute;
+right:50px;
+top:460px;
+z-index:999999;
+}
+
+#rotate_hover{
+opacity:1;
+}
+
+
+
+#enquire{
+position:absolute;
+right:20px;
+bottom:800px;
+height:60px;
+color:#111111;
+font-size:20px;
+
+width:400px;
+line-height:30px;
+vertical-align:top;
+z-index:999999;
+ 
+}
+
+
+#enquire_btn{
+ width: 52px;
+height: 52px;
+z-index:999999;
+border-radius: 50%;
+display:inline-block;
+text-align:center;
+display:inline-block;
+background:#46494B;
+  
+}
+
+
+#enquire_btn:hover{
+background:#333333;  
+}
+ 
+#enquire_txt{
+width:340px;
+height:52px;
+display:inline-block;
+line-height:56px;
+vertical-align:top;
+text-align:left;
+letter-spacing:0px;
+z-index:999999;
+font-weight:600;
+ }
+
+
+
+#enquire_btn:hover{
+background:#1F203F;
+}
+
+#enq{height:30px; padding-top:10px; z-index:999999;}
+
+
+
+#price_boxX{
+position:absolute;
+top:60px;
+height:140px;
+right:30px;
+color:#111111;
+font-size:28px;
+
+width:300px;
+line-height:60px;
+vertical-align:top;
+text-align:left;
+letter-spacing:2px;
+}
+
+#price_box2{
+width:100%;
+height:52px;
+display:inline-block;
+line-height:50px;
+vertical-align:top;
+text-align:right;
+letter-spacing:1px;
+font-size:46px;
+color:#111111;
+}
+
+
+
+
+#open_close_box{
+position:absolute;
+right:40px;
+top:200px;
+width:180px;
+height:160px;
+z-index:99999999999;
+ 
+}
+
+#ocicon{
+width:43px;
+height:40px;
+margin:4px;
+z-index:99999999999;
+}
+
+#ocicon:hover{
+opacity:0.1;
+}
+}
+
+
+#konfig_frame{
+background-size:100% 100%;
+width:100%;
+height:100%;
+transform-style: preserve-3d;   perspective: 500000000px; 
+
+background: rgb(219,219,219);
+background: linear-gradient(157deg, rgba(219,219,219,1) 0%, rgba(195,195,195,0.196516106442577) 100%);
+
+} 
+
+
+
+#order_btn{
+width:220px;
+height:40px;
+text-align:center;
+background:#000000;
+color:#FFFFFF;
+position:absolute;
+right:40px;
+bottom:60px;
+line-height:40px;
+
+ 
+
+                /* krug */
+    box-shadow:
+        inset 4px 4px 8px rgba(255,255,255,0.35),  /* lagani odsjaj */
+        inset -4px -4px 8px rgba(0,0,0,0.4);       /* sjena za 3D */
+}
+#order_btn:hover{
+background:#333333;
+
+}
+
+
+
+@media only screen and (max-width:1000px) {
+
+
+
+#order_btn{
+width:220px;
+height:50px;
+text-align:center;
+background:#46494B;
+color:#FFFFFF;
+position:absolute;
+right:50px;
+bottom:810px;
+line-height:50px;
+
+border-radius:4px;
+border:#FFFFFF solid 1px;
+}
+}
+
+
+
+
+#scena{
+
+right:0px;
+width:100%;
+height:44px;
+line-height:44px;
+background:#ffffff;
+border-radius:3px;
+
+color:#333333;
+font-size:14px;
+margin-bottom:6px;
+text-align:left !important;
+}
+
+
+#scena:hover{
+
+background:#333333;
+color:#FFFFFF;
+}
+
+
+#modeli{
+position:absolute;
+right:0px;
+top:300px;
+height:500px;
+z-index:999999999999;
+ 
+ 
+ }
+
+#postavke{
+position:absolute;
+top:10px;
+left:400px;
+width:200px;
+
+
+}
+
+
+
+
+
+
+
+#add_cart_btn{		
+position:absolute;
+right:40px;
+bottom:80px;
+height:50px;
+font-size:22px;
+font-family:Arial, Helvetica, sans-serif;
+width:220px;
+line-height:50px;
+vertical-align:top;
+z-index:99999999999999;		
+background: rgb(0,174,239);
+ border-radius:30px;
+background:rgba(255,255,255,0.6);
+z-index:9999999999;
+backdrop-filter: blur(4px);
+color:#000000;
+text-align:left;
+}  
+
+
+
+#add_1{		
+position:absolute;
+width:160px;
+height:50px;
+line-height:50px;
+left:20px;
+}  
+
+
+#add_2{		
+position:absolute;
+width:50px;
+height:50px;
+line-height:50px;
+right:0px;
+background: #FF0000;
+background: radial-gradient(circle, rgba(255, 0, 0, 1) 65%, rgba(148, 187, 233, 1) 100%);
+text-align:center;
+border-radius:200px;
+color:#FFFFFF;
+}  
+
+
+#add_2:hover{		
+background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}  
+
+ 
+
+@media only screen and (max-width: 1000px) {
+#add_cart_btn{
+bottom:840px;
+}  
+}
+</style>
+ 
+
+<link href="css/style_desk.css" rel="stylesheet"> 
+<link href="css/style.css" rel="stylesheet"> 
+
+ 
+   <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
+
+ 
+</head>
+
+<body onload="screenshot()">
+<div id="konfig_frame" >
+  
+
+
+ 
+<img src="modeli/0403GC.jpg" id="modeli" style="display:none;">
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<style type="text/css">
+ 
+ 
+ 
+ #pod{
+position:absolute;
+ bottom:0px;
+ width:calc(100% - 0px);
+ height:200px;
+ left:0px;
+ z-index:0;
+ background:url(bg/pod_in.jpg);
+ 
+ 
+ }
+ 
+ 
+#stepenice{
+
+position:absolute;
+ bottom:-120px;
+ width:calc(100% + 400px);
+ height:120px;
+ left:-200px;
+ z-index:999999999;
+  transform-style: preserve-3d;
+  perspective: 50000px;
+  transform:translateZ(450px);
+} 
+ 
+ 
+ 
+
+ 
+
+ .cube {
+  position: absolute;
+ width:100%;
+  height:100vh;
+ transform-style: preserve-3d;
+
+ left:0%;
+ bottom:40px;
+ transform-origin:center center;
+  transform-style: preserve-3d;
+  perspective: 40000000px;
+  z-index:9999999999999;
+ 
+ 
+ 
+ 
+}
+
+
+
+
+
+
+
+ 
+
+#front {
+ 
+  transform: translateZ(15px);
+  width:100%;
+  height:100%;
+  position: relative;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+     transform-style: preserve-3d;
+ 
+  perspective: 40000000px;  
+  }
+
+
+
+#door_div{
+position:absolute;
+ width:285.71428571429px;
+ height:571.42857142857px;
+ 
+bottom:calc(50% - 285.71428571429px);
+text-align:center;
+
+transform-style: preserve-3d;   
+perspective: 500000000px;
+background-image: radial-gradient(circle closest-side, rgba(255, 255,255, 0.2), rgba(0, 0, 0, 0)); 
+transform:  transform-origin:center bottom;
+ 
+
+
+}
+
+
+ 
+
+</style>
+ 
+
+
+
+
+<style type="text/css">
+
+
+
+
+
+
+ 
+
+
+
+
+
+@media only screen and (max-width: 990px) {
+ 
+
+
+
+
+.cube {
+  position: absolute;
+ width:800px;
+  height:700px;
+ transform-style: preserve-3d;
+
+ left:calc(50% - 400px);
+ top:260px;
+ transform-origin:center center;
+  transform-style: preserve-3d;
+  perspective: 50000px;
+  z-index:9999999999999;
+
+}
+
+
+
+}
+
+
+
+
+
+
+ 
+#doorimg{
+
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+transform-style: preserve-3d;   
+perspective: 500000000px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+  
+  
+ 
+  
+  
+#okvir{
+width:285.71428571429px;
+height:571.42857142857px;
+text-align:center;
+display:inline-block;
+ position:absolute;
+
+transform-style: preserve-3d;   perspective: 5000000px;
+z-index:9999999;
+bottom:0px;
+left:0px;
+ }
+
+
+
+
+
+
+
+#krilo{
+position:absolute;
+width:calc(100% - 36px);
+height:calc(100% - 20px);
+text-align:center;
+display:inline-block;
+background:#383E42;
+left:16px;
+bottom:0px;
+border-bottom:0px;
+transform-style: preserve-3d;   perspective:5000000px; 
+  transform-origin:5px;
+ }
+
+
+
+
+
+
+
+
+#krilo_L{
+position:absolute;
+width:calc(50% - 18px);
+height:calc(100% - 23px);
+text-align:center;
+display:inline-block;
+background:#383E42;
+left:17px;
+bottom:0px;
+border-bottom:0px;
+transform-style: preserve-3d;   perspective:5000000px; 
+ transform-origin:5px;
+}
+
+
+#krilo_R{
+position:absolute;
+width:calc(50% - 18px);
+height:calc(100% - 23px);
+text-align:center;
+display:inline-block;
+background:#383E42;
+right:17px;
+bottom:0px;
+border-bottom:0px;
+transform-style: preserve-3d;   perspective:5000000px; 
+ transform-origin:122.85714285714px;
+
+}
+
+
+
+
+#krilo_mirror{
+position:absolute;
+width:100%;
+height:100%;
+right:1px;
+bottom:0px;
+transform-style: preserve-3d;   perspective:5000000px; 
+transform:scale(-1,1);
+
+
+}
+
+
+#krilo_border{
+position:absolute;
+width:calc(100% - 4px);
+height:calc(100% - 6px);
+left:0px;
+bottom:0px;
+z-index:9999999; 
+border:rgba(0,0,0,0.3) groove 3px;
+}
+
+#krilo_border_in{
+position:absolute;
+width:calc(100% - 4px);
+height:calc(100% - 6px);
+left:px;
+bottom:0px;
+z-index:9999999; 
+border:rgba(0,0,0,0.4) groove 2px;
+transform-style: preserve-3d;   perspective:5000000px; 
+transform:translateZ(-4px);
+ 
+}
+
+
+
+#krilo_parts{
+position:absolute;
+width:100%;
+height:100%;
+left:0px;
+bottom:0px;
+transform-style: preserve-3d;   perspective:5000000px;
+
+}
+
+
+
+#okvir_side_L{
+position:absolute;
+left:0px;
+bottom:0px;
+width:24px;
+height:100%;
+background:#383E42;
+ 
+
+}
+
+
+#okvir_side_R{
+position:absolute;
+right:0px;
+bottom:0px;
+width:24px;
+height:100%;
+background:#383E42;
+}
+
+#okvir_side_T{
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+height:24px;
+background:#383E42;
+}
+
+
+#okvir_side_B{
+position:absolute;
+left:0px;
+bottom:0px;
+width:100%;
+height:24px;
+background:#383E42;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+#rozeta{
+width:4px;
+height:4px;
+border:rgba(255,255,255,0.4) ridge 2px;
+border-radius:10px;
+background:rgba(0,0,0,0.3);
+position:absolute;
+bottom:260px;
+right:5px;
+}
+
+
+#okvir_in{
+width:px;
+height:px;
+border:rgba(0,0,0,0.4) solid 1px;
+text-align:center;
+display:inline-block;
+ background:#383E42;
+position:relative;
+border-radius: 1px;
+ transform-style: preserve-3d;   perspective: 500000000px;
+ 
+} 
+
+
+ 
+
+
+
+#krilo_in{
+position:absolute;
+width:100%;
+height:100%;
+text-align:center;
+display:inline-block;
+transform-style: preserve-3d;   perspective: 500000000px;
+background:#383E42;
+
+left:0px;
+bottom:0px;
+  transform: scaleX(-1);transform:translateZ(-16px);
+
+}
+
+#hand_box{
+height:100%;
+line-height:100%;
+width:100%;
+position:relative;
+vertical-align:middle;
+text-align:right;
+transform-style: preserve-3d;   perspective: 500000000px; 
+}
+
+#hand_out{
+position:absolute; 
+right:24px;
+bottom:120px;
+z-index:9999999999;
+width:9px;
+transform-style: preserve-3d;   perspective: 500000000px;
+transform:translateZ(4px);
+
+}
+
+#hand_in{
+position:absolute; 
+right:14px;
+bottom:240px;
+width:40px;
+transform-style: preserve-3d;   perspective: 500000000px;
+transform: rotateY(180deg) translateZ(4px);
+z-index:999999999;
+ 
+}
+
+
+#krilo_stakloR{
+position:absolute;
+left:0px;
+top:20px;
+width:calc(100% - 24px);
+height:calc(100% - 40px);
+background-image:url(glass/brnz.png);
+background-position:center;
+border:rgba(0,0,0,0.3) ridge 2px;
+}
+
+#krilo_stakloR_back{
+position:absolute;
+left:0px;
+top:20px;
+width:calc(100% - 24px);
+height:calc(100% - 40px);
+background-image:url(glass/brnz.png);
+background-position:center;
+border:rgba(0,0,0,0.3) ridge 2px;
+
+transform:translateZ(-14px);
+}
+
+
+
+
+
+#krilo_stakloL{
+position:absolute;
+right:0px;
+top:20px;
+width:calc(100% - 24px);
+height:calc(100% - 40px);
+background-image:url(glass/brnz.png);
+background-position:center;
+
+border:rgba(0,0,0,0.3) ridge 2px;
+}
+
+
+
+
+#krilo_stakloL_back{
+position:absolute;
+right:0px;
+top:20px;
+width:calc(100% - 24px);
+height:calc(100% - 40px);
+background-image:url(glass/brnz.png);
+background-position:center;
+
+border:rgba(0,0,0,0.3) ridge 2px;
+transform:translateZ(-14px);
+}
+
+
+
+
+#krilo_staklo{
+position:absolute;
+left:20px;
+top:20px;
+width:calc(100% - 40px);
+height:calc(100% - 40px);
+background-image:url(glass/brnz.png);
+background-position:center;
+background-size:100% 100%;
+border:rgba(0,0,0,0.3) ridge 2px;
+}
+
+#krilo_stakloT{
+position:absolute;
+left:24px;
+top:24px;
+width:calc(100% - 48px);
+height:calc(100% - 48px);
+background-image:url(glass/brnz.png);
+background-position:center;
+ 
+
+}
+
+
+#krilo_stakloT_back{
+position:absolute;
+left:24px;
+top:24px;
+width:calc(100% - 48px);
+height:calc(100% - 48px);
+background-image:url(glass/brnz.png);
+background-position:center;
+ 
+
+transform:translateZ(-14px);
+}
+
+
+#krilo_left{
+width:114.28571428571px;
+height:571.42857142857px;
+left:-114.28571428571px;
+border:rgba(0,0,0,0) solid 0px;
+text-align:center;
+display:inline-block;
+position:absolute;
+transform-style: preserve-3d;   perspective: 500000000px; 
+ display:none;}
+
+
+#krilo_right{
+width:114.28571428571px;
+height:571.42857142857px;
+border:rgba(0,0,0,00) solid 0px;
+right:-114.28571428571px;
+text-align:center;
+display:inline-block;
+position:absolute;
+transform-style: preserve-3d;   perspective: 500000000px; 
+ display:none;} 
+
+
+
+#krilo_top{
+width:285.71428571429px;
+height:114.28571428571px;
+top:-114.28571428571px;
+left:0px;
+
+
+
+ 
+
+
+border:rgba(0,0,0,0.0) solid 0px;
+text-align:center;
+display:inline-block;
+position:absolute;
+transform-style: preserve-3d;   perspective: 500000000px; 
+display:none} 
+
+
+
+
+
+
+
+
+
+#krilo_left_in{
+width:114.28571428571px;
+height:px;
+border:rgba(0,0,0,0.4) solid 0px;
+text-align:center;
+display:inline-block;
+position:relative;
+background:#383E42;
+display:none;}
+
+
+#krilo_right_in{
+width:114.28571428571px;
+height:px;
+border:rgba(0,0,0,0.4) solid 0px;
+text-align:center;
+display:inline-block;
+position:relative;
+background:#383E42;
+display:none;} 
+
+
+
+#krilo_top_in{
+width:285.71428571429px;
+height:114.28571428571px;
+border:rgba(0,0,0,0.4) solid 0px;
+text-align:center;
+display:inline-block;
+position:relative;
+background:#383E42;
+border:none; height:0px;} 
+
+#baglama1{width:5px; height:40px;  position:absolute;  left:-5px;  bottom:12%;   }
+#baglama2{width:5px; height:40px;  position:absolute;  left:-5px;  bottom:66%;   }
+#baglama3{width:5px; height:40px;  position:absolute;  left:-5px;  bottom:80%;   }
+
+
+
+  
+#zastita{
+position:absolute;
+width:100%;
+bottom:0px;
+left:0px;
+} 
+
+  
+#letterbox{
+position:absolute;
+width:100%;
+bottom:30px;
+left:calc(50% - 40px);
+width:80px;
+} 
+
+
+
+
+#viewers{
+position:absolute;
+bottom:420px;
+left:calc(50% - 4px);
+width:8px;
+height:8px;
+border:rgba(0,0,0,0.6) ridge 2px;
+border-radius:10px;
+background:rgba(0,0,0,0.4);
+} 
+ 
+</style>
+
+<style>
+  
+ 
+
+ 
+#krilo_normalno{
+
+
+
+position:relative;
+width:100%;
+height:100%;
+border:rgba(0,0,0,0.3) ridge 0px;
+margin-top:0px;
+margin-left:0px;
+transform-style: preserve-3d;   perspective: 500000000px; 
+}
+
+
+#krilo_normalno_in{
+transform-style: preserve-3d;   perspective: 500000000px;
+position:relative;
+width:100%;
+height:100%;
+border:rgba(0,0,0,0.3) ridge 0px;
+margin-top:0px;
+margin-left:0px;
+
+
+
+
+}
+
+ 
+
+
+
+#profil_L{
+position:absolute;
+width:16px;
+height:100%;
+left:0px;
+bottom:0px;
+background:#343434;
+transform:rotateY(90deg);
+transform-origin:left;
+}
+
+#profil_R{
+position:absolute;
+width:16px;
+height:100%;
+right:0px;
+bottom:0px;
+background:#343434;
+transform:rotateY(-90deg);
+transform-origin:right;
+}
+
+#profil_T{
+position:absolute;
+width:100%;
+height:16px;
+right:0px;
+top:0px;
+background:#343434;
+transform:rotateX(-90deg);
+transform-origin:top;
+}
+
+#profil_B{
+position:absolute;
+width:100%;
+height:16px;
+right:0px;
+bottom:0px;
+background:#343434;
+transform:rotateX(90deg);
+transform-origin:bottom;
+}
+
+
+
+
+ 
+
+
+
+#okvir_side_LB{
+position:absolute;
+left:0px;
+bottom:0px;
+width:24px;
+height:100%;
+background:#383E42;
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform:translateZ(-16px);
+ 
+}
+
+#okvir_side_RB{
+position:absolute;
+right:0px;
+bottom:0px;
+width:24px;
+height:100%;
+background:#383E42;
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform:translateZ(-16px);
+}
+
+#okvir_side_TB{
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+height:24px;
+background:#383E42;
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform:translateZ(-16px);
+}
+
+
+#okvir_side_BB{
+position:absolute;
+left:0px;
+bottom:0px;
+width:100%;
+height:24px;
+background:#383E42;
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform:translateZ(-16px);
+}
+
+
+
+
+#zvono{
+position:absolute;
+width:40px; 
+left:calc(50% - 20px);
+top:100px;
+z-index:99999;
+}
+
+
+ 
+
+</style>
+
+
+ 
+ 
+<style type="text/css">
+   #ko_height_box{
+   position:absolute;
+   width:30px;
+   height:100%;
+   border-top:#666666 solid 1px;
+   border-bottom:#666666 solid 1px;
+   right:-32px;
+   bottom:0px;
+   line-height:100%;
+   vertical-align:middle;
+   font-size:11px;
+   }
+   
+   #ko_height_ispis{
+   position:absolute;
+   width:100%;
+   height:16px;
+   bottom:calc(50% - 10px);
+   z-index:9999;
+   background:#FFFFFF;
+   text-align:center;
+   line-height:16px;
+   }
+   
+   #ko_height_line{
+   position:absolute;
+   width:50%;
+   height:100%;
+   border-right:#666666 solid 1px;
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   #ko_width_box{
+   position:absolute;
+   width:100%;
+   height:30px;
+   border-left:#666666 solid 1px;
+   border-right:#666666 solid 1px;
+   right:0px;
+   bottom:-32px;
+ 
+   font-size:11px;
+   text-align:center;
+   z-index:999999999;
+   
+ 
+   }
+   
+   #ko_width_ispis{
+   position:absolute;
+   width:60px;
+   height:16px;
+   bottom:10px;
+   left:calc(50% - 30px);
+   z-index:9999;
+   background:#FFFFFF;
+   text-align:center;
+   line-height:16px;
+   }
+   
+   #ko_width_line{
+   position:absolute;
+   width:100%;
+   height:50%;
+   border-bottom:#666666 solid 1px;
+   }
+   
+   
+   
+  #bgl_1{  position:absolute; width:6px;  height:40px;  left:-1px;  bottom:30px;  } #bgl_2{  position:absolute; width:6px;  height:40px;  left:-1px;  top:22%;  } #bgl_3{  position:absolute; width:6px;  height:40px;  left:-1px;  top:30px;  }  
+   </style>  
+
+
+<style type="text/css">
+
+#pod2D{
+position:absolute;
+bottom:0px;
+width:140vw;
+left:-20vw;
+height:500px;
+background:url(bg/pod_out.jpg);
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform: rotateX(90deg) translateY(-250px) translateZ(-250px);
+z-index:99999;
+}
+
+
+
+
+#pod2D_90{
+position:absolute;
+bottom:0px;
+width:100%;
+left:0%;
+height:100px;
+background:url(bg/pod_out.jpg);
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform: rotateX(90deg) translateY(-50px) translateZ(-50px);
+z-index:99999;
+}
+
+
+
+#pod2D_in{
+position:absolute;
+bottom:0px;
+width:140vw;
+left:-20vw;
+height:1000px;
+background:url(bg/wind_pod.jpg);
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform: rotateX(90deg) translateY(-500px) ;
+z-index:99999;
+transform-origin: bottom left;
+}
+
+
+
+
+
+
+ 
+#zid_out_R{
+position:absolute;
+bottom:0px;
+width:2000px;
+right:-2000px;
+height:100vh;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada.jpg);
+transform:translateZ(20px);
+
+}
+#zid_out_R90{
+position:absolute;
+bottom:0px;
+width:20px;
+left:0px;
+height:100%;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada.jpg);
+transform:rotateY(90deg);
+transform-origin:left;
+box-shadow: inset 0 3px 8px rgba(0,0,0,.24);
+
+
+}
+
+
+
+ 
+#zid_out_L{
+position:absolute;
+bottom:0px;
+width:2000px;
+left:-2000px;
+height:100vh;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada.jpg);
+transform:translateZ(20px);
+}
+
+
+#zid_out_L_wood{
+position:absolute;
+bottom:0px;
+width:100%;
+right:0;
+height:100%;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/wood.png);
+background-repeat:repeat-x;
+ 
+}
+
+#zid_out_L90{
+position:absolute;
+bottom:0px;
+width:20px;
+right:0px;
+height:100%;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada.jpg);
+transform:rotateY(-90deg);
+transform-origin:right;
+box-shadow: inset 0 3px 8px rgba(0,0,0,.24);
+
+
+}
+
+
+#zid_out_T{
+position:absolute;
+bottom:0px;
+width:calc(100% + 2px);
+left:-1px;
+top:-1000px;
+height:1000px;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada.jpg);
+transform:translateZ(20px);
+}
+
+
+
+
+#light_R{
+position:absolute;
+height:200px;
+left:0px;
+bottom:400px;
+z-index:99999;
+}
+
+
+
+
+#light_L{
+position:absolute;
+height:200px;
+right:0px;
+bottom:400px;
+z-index:99999;
+}
+
+
+
+
+
+
+
+#zid_in_R{
+position:absolute;
+bottom:0px;
+width:2000px;
+right:-2000px;
+height:100vh;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada_in.jpg);
+transform:translateZ(-30px);
+}
+
+
+
+ 
+#zid_in_L{
+position:absolute;
+bottom:0px;
+width:2000px;
+left:-2000px;
+height:100vh;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada_in.jpg);
+transform:translateZ(-30px);
+}
+
+
+
+
+
+#zid_in_T{
+position:absolute;
+bottom:0px;
+width:calc(100% + 2px);
+left:-1px;
+top:-1000px;
+height:1000px;
+transform-style: preserve-3d;   perspective: 500000000px; 
+background:url(bg/fasada_in.jpg);
+transform:translateZ(-30px);
+}
+
+
+#interior{
+position:absolute;
+bottom:0px;
+width:2800px;
+left:-1400px;
+bottom:0px;
+height:600px;
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform:translateZ(-1000px);
+}
+
+ 
+#brava_foto{
+position:absolute;
+right:1px;
+bottom:360px;
+width:22px;
+
+}
+
+
+</style>
+ 
+
+
+
+
+
+<style type="text/css">
+
+#in_pod2D{
+position:absolute;
+bottom:0px;
+width:140vw;
+left:-20vw;
+height:500px;
+background:url(bg/wind_pod.jpg);
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform: rotateX(90deg) translateY(-250px) translateZ(-250px);
+z-index:99999;
+}
+
+
+
+
+#in_pod2D_90{
+position:absolute;
+top:0px;
+width:100%;
+left:0%;
+height:300px;
+background:url(bg/wind_pod.jpg);
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform: rotateX(90deg) translateY(-50px) translateZ(-50px);
+z-index:99999;
+}
+
+
+
+
+ 
+
+ 
+#namjestaj{
+position:absolute;
+height:400px;
+right:-200px;
+bottom:0px;
+z-index:99999;
+transform-style: preserve-3d;   perspective: 500000000px; 
+transform: translateZ(-200px) ;
+
+}
+
+
+
+</style>
+
+
+
+
+
+ 
+ <style type="text/css">
+   
+  #door_screen{
+ position:absolute;
+ left:calc(50% - 0px);
+ bottom:150px !important;
+ width:px;
+ height:px;
+ transform-style: preserve-3d;
+ perspective: 40000000px;
+ 
+  }
+  
+
+
+ #home_in{
+width:100%;
+height:100%;
+position:absolute;
+right:0;
+background:url(https://konfigurator.ba/demo_windows/doors/bg/home_in.jpg);
+background-position:bottom;
+background-size:100% 100%;
+bottom:0px;
+transform:translateZ(-300px);
+} 
+ 
+ 
+ 
+ 
+  
+
+  
+ 
+  
+  
+  
+  #door_side_left{
+  position:absolute;
+  height:100%;
+  width:800px;
+  left:-800px;
+  bottom:0px;
+ 
+background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_left.jpg);
+background-position: 100% 100%;
+background-repeat:no-repeat;
+background-size:cover ;
+z-index:999999999999;
+ 
+  }
+  
+  
+  
+  
+    #door_side_right{
+  position:absolute;
+  height:100%;
+  width:800px;
+  right:-800px;
+  bottom:0px;
+ 
+  background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_right.jpg);
+background-position: 0% 0%;
+background-repeat:no-repeat;
+background-size:100% 100% ;
+  }
+  
+  
+  
+  
+  
+  
+
+  #door_side_top{
+  position:absolute;
+  height:400px;
+  width:100%;
+  left:0px;
+  top:-400px;
+ 
+ 
+  background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_top.jpg);
+background-position: 100% 100%;
+background-repeat:no-repeat;
+background-size: 100%  100%  ;
+ }
+  
+  
+ #door_side_left_top{
+  position:absolute;
+  height:400px;
+  width:800px;
+  left:-800px;
+  top:-400px;
+ 
+background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_left_top.jpg);
+background-position: 100% 100%;
+background-repeat:no-repeat;
+background-size: 100%  100%  ;
+ 
+
+  } 
+  
+  
+  
+  
+  
+  
+
+  
+  
+   #door_side_right_top{
+  position:absolute;
+  height:400px;
+  width:800px;
+  right:-800px;
+  top:-400px;
+ 
+background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_right_top.jpg);
+background-position: 100% 100%;
+background-repeat:no-repeat;
+background-size: 100%  100%  ;
+ 
+
+  } 
+  
+  
+  
+    #door_side_bottom{
+  position:absolute;
+  height:160px;
+ width:100%;
+  left:0px;
+  bottom:-160px;
+ text-align:center;
+ 
+  background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_bottom.jpg);
+background-position: 100% 100%;
+background-repeat:no-repeat;
+background-size: 100%  100%  ;
+ 
+ 
+  }
+  
+
+    #door_side_right_bottom{
+  position:absolute;
+  height:160px;
+  width:800px;
+  right:-800px;
+  bottom:-160px;
+ 
+background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_right_bottom.jpg);
+background-position: 100% 100%;
+background-repeat:no-repeat;
+background-size: 100%  100%  ;
+ 
+ 
+
+  } 
+ 
+ 
+ 
+ 
+    #door_side_left_bottom{
+  position:absolute;
+  height:160px;
+  width:800px;
+  left:-800px;
+  bottom:-160px;
+ 
+background:url(https://konfigurator.ba/demo_windows/doors/bg/door_side_left_bottom.jpg);
+background-position: 100% 100%;
+background-repeat:no-repeat;
+background-size: 100%  100%  ;
+ 
+ 
+
+  }
+ 
+ 
+ #spaleta{
+position:absolute;
+width:calc(100% + 20px);
+height:calc(100% + 10px);
+left:-10px;
+bottom:0px;
+transform-style: preserve-3d;
+perspective: 40000000px;
+transform:translateZ(1px);
+z-index:-9999;
+
+box-shadow: inset 0 0 18px 3px #000000;
+ }
+ 
+ </style>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+<style type="text/css">
+
+#hand_box{         animation: krilo_design1  1s;  }
+
+
+#krilo_set_1{    animation: krilo_design3  1s;}
+#krilo_set_2{    animation: krilo_design7  1.5s;}
+#krilo_set_3{    animation: krilo_design8  1.2s;}
+#krilo_set_4{    animation: krilo_design4  1.7s;}
+#krilo_set_5{    animation: krilo_design1  1.1s;}
+#krilo_set_6{    animation: krilo_design2  1.1s;}
+#krilo_set_7{    animation: krilo_design7  1.7s;}
+#krilo_set_8{    animation: krilo_design1  1.1s;}
+#krilo_set_9{    animation: krilo_design5  1.4s;}
+#krilo_set_10{    animation: krilo_design3  1.1s;}
+#krilo_set_11{    animation: krilo_design1  0.8s;}
+#krilo_set_12{    animation: krilo_design2  1.5s;}
+#krilo_set_13{    animation: krilo_design7  1.2s;}
+#krilo_set_14{    animation: krilo_design8  1.7s;}
+
+
+
+#krilo_design1{    animation: krilo_design3  1s;}
+#krilo_design2{    animation: krilo_design2  1.5s;}
+#krilo_design3{    animation: krilo_design3  1.2s;}
+#krilo_design4{    animation: krilo_design4  1.7s;}
+#krilo_design5{    animation: krilo_design1  1.1s;}
+#krilo_design6{    animation: krilo_design2  1.1s;}
+#krilo_design7{    animation: krilo_design4  1.7s;}
+#krilo_design8{    animation: krilo_design1  1.1s;}
+#krilo_design9{    animation: krilo_design5  1.4s;}
+#krilo_design10{    animation: krilo_design3  1.1s;}
+#krilo_design11{    animation: krilo_design1  0.8s;}
+
+
+#krilo_left{     animation: krilo_left  1s;  }
+#krilo_right{    animation: krilo_right  1s;}
+#okvir{    animation: krilo  1s;}
+ 
+ 
+
+
+@keyframes mymove {
+  from {box-shadow: 0px 0px 8px 1px red; }
+  to {box-shadow: 0px 0px 8px 1px blue; }
+}
+
+@keyframes krilo_design1 {
+  from {bottom:-400px; left:-444px; transform:rotate(1844deg); }
+  to {}
+}
+
+
+@keyframes krilo_design2 {
+  from {bottom:-400px; left:-444px; transform:rotate(744deg); }
+  to { }
+}
+
+@keyframes krilo_design3 {
+  from {bottom:-400px; right:-444px; transform:rotate(-1244deg); }
+  to {;  }
+}
+@keyframes krilo_design4 {
+  from {bottom:-400px; left:-444px; transform:rotate(444deg); }
+   to {}
+}
+@keyframes krilo_design7 {
+  from {bottom:-400px; right:-444px; transform:rotate(-244deg); }
+   to {}
+}
+
+@keyframes krilo_design8 {
+  from {bottom:-400px; left:-444px; transform:rotate(244deg); }
+   to {}
+}
+
+
+@keyframes krilo_design5 {
+  from {bottom:-400px; right:-444px;  }
+  to {}
+}
+@keyframes krilo_left {
+  from {bottom:-400px; left:-1444px;  }
+  to { }
+  }
+@keyframes krilo_right {
+  from {bottom:-400px; right:-1444px;  }
+  to { }
+}
+@keyframes krilo {
+  from {bottom:-400px; right:-1444px;  transform:rotate(24deg); }
+  to { }
+}
+
+</style>
+
+
+
+
+
+<style type="text/css">
+
+#krilo_design1{
+width:70px;
+height:calc(100% - 140px);
+ 
+background-image:url(glass/brnz.png);
+position:absolute;
+left:0px;
+bottom:0;
+border-bottom:#000000 solid 70px;
+border-top:#000000 solid 70px;
+border-left:#000000 solid 50px;
+border-right:#000000 solid 50px;
+
+z-index:99999999;
+}
+
+
+ 
+
+</style>
+
+
+
+
+<style type="text/css">
+
+
+#krilo{background:none;}
+#krilo_in{background:none;}
+
+#krilo_design_bg_1{
+position:absolute;
+width:calc(100% - 160px);
+height:100%;
+text-align:center;
+display:inline-block;
+background:#383E42;
+right:0px;
+bottom:0px;
+border-bottom:0px;
+transform-style: preserve-3d;   perspective:5000000px; 
+
+z-index:9999;
+}
+
+
+ 
+
+ 
+
+
+
+#krilo_design_bg_1_in{
+position:absolute;
+width:calc(100% - 160px);
+height:100%;
+text-align:center;
+display:inline-block;
+ background:#383E42;
+right:0px;
+bottom:0px;
+border-bottom:0px;
+transform-style: preserve-3d;   perspective:5000000px; 
+  z-index:9999;
+
+}
+
+ 
+
+ 
+ 
+
+</style>
+
+
+
+
+
+
+
+ <div id="door_bg">  
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ <div class="cube">  
+ <div id="front" class="workspace" > 
+ 
+ 
+ 
+ 
+   <!--   FRONT START    -->
+
+<div id="door_div" >
+<!-- DOOR ROTATE -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- DOOR SIZE -->
+ 
+
+
+
+ 
+<div id="okvir" >
+
+
+
+<div id="krilo_top"><!--   top start -->
+<div id="okvir_side_L" ></div><div id="okvir_side_R"></div><div id="okvir_side_T"></div><div id="okvir_side_B"></div><div id="okvir_side_LB"></div><div id="okvir_side_RB"></div><div id="okvir_side_TB"></div><div id="okvir_side_BB"></div><div id="profil_L"></div><div id="profil_R"></div><div id="profil_T"></div><div id="profil_B"></div>
+
+
+<div id="krilo_stakloT"></div><div id="krilo_stakloT_back"></div>
+</div><!--   top end -->
+
+
+
+
+
+
+<div id="krilo_left"> <!--   left start -->
+
+<div id="okvir_side_L"></div><div id="okvir_side_T"></div><div id="okvir_side_B"></div><div id="okvir_side_LB"></div><div id="okvir_side_TB"></div><div id="okvir_side_BB"></div><div id="profil_L"></div><div id="profil_R"></div><div id="profil_T"></div><div id="profil_B"></div>
+<div id="krilo_stakloL"></div><div id="krilo_stakloL_back"></div>
+</div> <!--   left end -->
+
+
+
+
+<div id="krilo_right"><!--   right start -->
+
+
+
+
+
+ <div id="okvir_side_R"></div><div id="okvir_side_T"></div><div id="okvir_side_B"></div><div id="profil_L"></div><div id="profil_R"></div><div id="profil_T"></div><div id="profil_B"></div><div id="okvir_side_RB"></div><div id="okvir_side_TB"></div><div id="okvir_side_BB"></div><div id="krilo_stakloR"></div><div id="krilo_stakloR_back"></div>
+
+</div>  <!--   right end -->
+
+
+
+
+
+
+
+
+
+
+<div id="okvir_design1"></div>
+<div id="okvir_design2"></div>
+<div id="okvir_design3"></div>
+<div id="okvir_design4"></div>
+<div id="okvir_design5"></div>
+<div id="okvir_design6"></div>
+<div id="okvir_design7"></div>
+<div id="okvir_design8"></div>
+<div id="okvir_design9"></div>
+<div id="okvir_design10"></div>
+<div id="okvir_design11"></div>
+<div id="okvir_desig12"></div>
+
+
+
+
+
+<div id="profil_L" ></div><div id="profil_R"></div><div id="profil_T"></div><div id="profil_B"></div>
+
+<div id="okvir_side_L"></div><div id="okvir_side_R"></div><div id="okvir_side_T"></div>
+<div id="okvir_side_LB"></div><div id="okvir_side_RB"></div><div id="okvir_side_TB"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   KRILO IN END -->
+
+
+<div id="krilo">
+
+<div id="krilo_border"></div><div id="krilo_parts">
+
+
+
+
+<div id="profil_L" ></div><div id="profil_R"></div><div id="profil_T"></div><div id="profil_B"></div>
+<div id="krilo_normalno">
+
+
+
+
+
+
+
+
+
+<div id="krilo_design_bg_1"></div>
+<div id="krilo_design_bg_2"></div>
+<div id="krilo_design_bg_3"></div>
+<div id="krilo_design_bg_4"></div>
+<div id="krilo_design_bg_5"></div>
+<div id="krilo_design_bg_6"></div>
+
+
+
+
+
+
+
+<div id="krilo_design1"><div id="krilo_design1_inX"></div></div>
+
+
+
+
+
+
+<div id="krilo_set_1"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_2"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_3"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_4"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_5"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_6"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_7"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_8"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_9"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_10"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_11"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_12"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_13"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+<div id="krilo_set_14"><div id="krilo_set_in1"></div><div id="krilo_set_in2"></div><div id="krilo_set_in3"></div><div id="krilo_set_in4"></div></div>
+
+
+<div id="krilo_design2"></div>
+<div id="krilo_design3"></div>
+<div id="krilo_design4"></div>
+<div id="krilo_design5"></div>
+<div id="krilo_design6"></div>
+<div id="krilo_design7"></div>
+<div id="krilo_design8"></div>
+<div id="krilo_design9"></div>
+<div id="krilo_design10"></div>
+<div id="krilo_design11"></div>
+<div id="krilo_design12"></div>
+<div id="krilo_design13"></div>
+<div id="krilo_design14"></div>
+<div id="krilo_design15"></div>
+<div id="krilo_design16"></div>
+<div id="krilo_design17"></div>
+<div id="krilo_design18"></div>
+<div id="krilo_design19"></div>
+<div id="krilo_design20"></div>
+<div id="krilo_design21"></div>
+<div id="krilo_design22"></div>
+<div id="krilo_design23"></div>
+<div id="krilo_design24"></div>
+<div id="krilo_design25"></div>
+<div id="krilo_design26"></div>
+<div id="krilo_design27"></div>
+<div id="krilo_design28"></div>
+<div id="krilo_design29"></div>
+<div id="krilo_design30"></div>
+<div id="krilo_design31"></div>
+
+
+<div id="hand_design1"></div>
+<div id="hand_design2"></div>
+<div id="hand_design3"></div>
+<div id="hand_design4"></div>
+<div id="hand_design5"></div>
+<div id="hand_design6"></div>
+<div id="hand_design7"></div>
+<div id="hand_design8"></div>
+<div id="hand_design9"></div>
+<div id="hand_design10"></div>
+
+<div id="hand_box">
+
+<img src="handles/P10_1.png" id="hand_out" style="height:340px;">
+</div>
+ 
+<div id="rozeta"></div>
+
+
+
+
+</div></div>
+
+
+
+<!--   KRILO IN START -->
+
+
+
+
+<div id="krilo_in">
+
+<div id="krilo_parts">
+<div id="krilo_normalno">
+
+
+<img src="baglame/bgl_inox.png"  id="bgl_1"  />
+<img src="baglame/bgl_inox.png"  id="bgl_2"  />
+<img src="baglame/bgl_inox.png"  id="bgl_3"  />
+ 
+ <div id="krilo_border_in"></div>
+<div id="krilo_design_bg_1_in"></div>
+<div id="krilo_design_bg_2_in"></div>
+<div id="krilo_design_bg_3_in"></div>
+<div id="krilo_design_bg_4_in"></div>
+<div id="krilo_design_bg_5_in"></div>
+<div id="krilo_design_bg_6_in"></div>
+
+<div id="krilo_design1_in"></div>
+<div id="krilo_design2_in"></div>
+<div id="krilo_design3_in"></div>
+<div id="krilo_design4_in"></div>
+<div id="krilo_design5_in"></div>
+<div id="krilo_design6_in"></div>
+<div id="krilo_design7_in"></div>
+<div id="krilo_design8_in"></div>
+<div id="krilo_design9_in"></div>
+<div id="krilo_design10_in"></div>
+<div id="krilo_design11_in"></div>
+<div id="krilo_design12_in"></div>
+<div id="krilo_design13_in"></div>
+<div id="krilo_design14_in"></div>
+<div id="krilo_design15_in"></div>
+<div id="krilo_design16_in"></div>
+<div id="krilo_design17_in"></div>
+
+
+
+
+<div id="hand_box"><img src="kvake/1.png" id="hand_in"></div>
+
+ <img src="https://konfigurator.ba/demo_windows/doors/img/baglame.png" id="baglama1"> <img src="https://konfigurator.ba/demo_windows/doors/img/baglame.png" id="baglama2"> <img src="https://konfigurator.ba/demo_windows/doors/img/baglame.png" id="baglama3">
+
+</div></div></div>
+
+
+
+
+<!--   KRILO IN END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+ 
+		
+</div></div>		
+
+
+
+</div>		
+
+
+<!--   FRONT END    -->
+
+
+
+
+
+ </div>  
+ 
+
+	  
+ 
+    </div>  
+
+
+
+
+
+
+
+
+
+    </div>   
+
+
+
+
+
+
+
+ 
+<script>
+function open_door() {
+document.getElementById('krilo').style.transform = "rotateY(130deg) translateZ(10px) translateX(10px)"; 
+document.getElementById('krilo').style.transition = " 3s"; 
+document.getElementById('krilo').style.transformOrigin = "0px";
+
+
+}
+function close_door() {
+document.getElementById('krilo').style.transform = " rotateY(0deg)"; 
+document.getElementById('krilo').style.transition = " 3s"; 
+}
+</script>
+
+
+
+
+
+
+
+<script id="rendered-js" >
+var events = new Events();
+events.add = function (obj) {
+  obj.events = {};
+};
+events.implement = function (fn) {
+  fn.prototype = Object.create(Events.prototype);
+};
+
+function Events() {
+  this.events = {};
+}
+Events.prototype.on = function (name, fn) {
+  var events = this.events[name];
+  if (events == undefined) {
+    this.events[name] = [fn];
+    this.emit('event:on', fn);
+  } else {
+    if (events.indexOf(fn) == -1) {
+      events.push(fn);
+      this.emit('event:on', fn);
+    }
+  }
+  return this;
+};
+Events.prototype.once = function (name, fn) {
+  var events = this.events[name];
+  fn.once = true;
+  if (!events) {
+    this.events[name] = [fn];
+    this.emit('event:once', fn);
+  } else {
+    if (events.indexOf(fn) == -1) {
+      events.push(fn);
+      this.emit('event:once', fn);
+    }
+  }
+  return this;
+};
+Events.prototype.emit = function (name, args) {
+  var events = this.events[name];
+  if (events) {
+    var i = events.length;
+    while (i--) {
+      if (events[i]) {
+        events[i].call(this, args);
+        if (events[i].once) {
+          delete events[i];
+        }
+      }
+    }
+  }
+  return this;
+};
+Events.prototype.unbind = function (name, fn) {
+  if (name) {
+    var events = this.events[name];
+    if (events) {
+      if (fn) {
+        var i = events.indexOf(fn);
+        if (i != -1) {
+          delete events[i];
+        }
+      } else {
+        delete this.events[name];
+      }
+    }
+  } else {
+    delete this.events;
+    this.events = {};
+  }
+  return this;
+};
+
+var userPrefix;
+
+var prefix = function () {
+  var styles = window.getComputedStyle(document.documentElement, ''),
+  pre = (Array.prototype.slice.
+  call(styles).
+  join('').
+  match(/-(moz|webkit|ms)-/) || styles.OLink === '' && ['', 'o'])[
+  1],
+  dom = 'WebKit|Moz|MS|O'.match(new RegExp('(' + pre + ')', 'i'))[1];
+  userPrefix = {
+    dom: dom,
+    lowercase: pre,
+    css: '-' + pre + '-',
+    js: pre[0].toUpperCase() + pre.substr(1) };
+
+}();
+
+function bindEvent(element, type, handler) {
+  if (element.addEventListener) {
+    element.addEventListener(type, handler, false);
+  } else {
+    element.attachEvent('on' + type, handler);
+  }
+}
+
+function Viewport(data) {
+  events.add(this);
+
+  var self = this;
+   
+
+
+
+  this.element = data.element;
+  this.fps = data.fps;
+  this.sensivity = data.sensivity;
+  this.sensivityFade = data.sensivityFade;
+  this.touchSensivity = data.touchSensivity;
+  this.speed = data.speed;
+
+
+
+  this.lastX = 0;
+  this.lastY = 0;
+  this.mouseX = 0;
+  this.mouseY = 0;
+  this.distanceX = 0;
+  this.distanceY = 0;
+   this.positionX = -20;
+    this.positionY = -13;
+  
+  this.torqueX = 0;
+  this.torqueY = 0;
+
+ 
+ 
+  this.down = false;
+  this.upsideDown = false;
+
+  this.previousPositionX = 0;
+  this.previousPositionY = 0;
+
+  this.currentSide = 0;
+  this.calculatedSide = 0;
+
+
+  bindEvent(document, 'mousedown', function () {
+    self.down = true;
+  });
+
+  bindEvent(document, 'mouseup', function () {
+    self.down = false;
+  });
+
+  bindEvent(document, 'keyup', function () {
+    self.down = false;
+  });
+
+  bindEvent(document, 'mousemove', function (e) {
+    self.mouseX = e.pageX;
+    self.mouseY = e.pageY;
+  });
+
+  bindEvent(document, 'touchstart', function (e) {
+
+    self.down = true;
+    e.touches ? e = e.touches[0] : null;
+    self.mouseX = e.pageX / self.touchSensivity;
+    self.mouseY = e.pageY / self.touchSensivity;
+    self.lastX = self.mouseX;
+    self.lastY = self.mouseY;
+  });
+
+  bindEvent(document, 'touchmove', function (e) {
+    if (e.preventDefault) {
+      e.preventDefault();
+    }
+
+    if (e.touches.length == 1) {
+
+      e.touches ? e = e.touches[0] : null;
+
+      self.mouseX = e.pageX / self.touchSensivity;
+      self.mouseY = e.pageY / self.touchSensivity;
+
+    }
+  });
+
+  bindEvent(document, 'touchend', function (e) {
+    self.down = false;
+  });
+
+  setInterval(this.animate.bind(this), this.fps);
+
+}
+events.implement(Viewport);
+Viewport.prototype.animate = function () {
+
+  this.distanceX = this.mouseX - this.lastX;
+  this.distanceY = this.mouseY - this.lastY;
+
+  this.lastX = this.mouseX;
+  this.lastY = this.mouseY;
+
+  if (this.down) {
+    this.torqueX = this.torqueX * this.sensivityFade + (this.distanceX * this.speed - this.torqueX) * this.sensivity;
+    this.torqueY = this.torqueY * this.sensivityFade + (this.distanceY * this.speed - this.torqueY) * this.sensivity;
+  }
+
+  if (Math.abs(this.torqueX) > 1.0 || Math.abs(this.torqueY) > 1.0) {
+    if (!this.down) {
+      this.torqueX *= this.sensivityFade;
+      this.torqueY *= this.sensivityFade;
+	 
+
+    }
+
+    this.positionY -= this.torqueY;
+
+    if (this.positionY > 360) {
+      this.positionY -= 360;
+    } else if (this.positionY < 0) {
+      this.positionY += 360;
+    }
+
+    if (this.positionY > 90 && this.positionY < 270) {
+      this.positionX -= this.torqueX;
+
+      if (!this.upsideDown) {
+        this.upsideDown = true;
+        this.emit('upsideDown', { upsideDown: this.upsideDown });
+      }
+
+    } else {
+
+      this.positionX += this.torqueX;
+ 
+      if (this.upsideDown) {
+        this.upsideDown = false;
+        this.emit('upsideDown', { upsideDown: this.upsideDown });
+      }
+    }
+
+    if (this.positionX > 360) {
+      this.positionX -= 360;
+    } else if (this.positionX < 0) {
+      this.positionX += 360;
+	     
+    }
+
+    if (!(this.positionY >= 46 && this.positionY <= 130) && !(this.positionY >= 220 && this.positionY <= 308)) {
+      if (this.upsideDown) {
+        if (this.positionX >= 42 && this.positionX <= 130) {
+          this.calculatedSide = 3;
+        } else if (this.positionX >= 131 && this.positionX <= 223) {
+          this.calculatedSide = 2;
+        } else if (this.positionX >= 224 && this.positionX <= 314) {
+          this.calculatedSide = 5;
+        } else {
+          this.calculatedSide = 4;
+        }
+      } else {
+        if (this.positionX >= 42 && this.positionX <= 130) {
+          this.calculatedSide = 5;
+        } else if (this.positionX >= 131 && this.positionX <= 223) {
+          this.calculatedSide = 4;
+        } else if (this.positionX >= 224 && this.positionX <= 314) {
+          this.calculatedSide = 3;
+        } else {
+          this.calculatedSide = 2;
+        }
+      }
+    } else {
+      if (this.positionY >= 46 && this.positionY <= 130) {
+        this.calculatedSide = 6;
+      }
+
+      if (this.positionY >= 220 && this.positionY <= 308) {
+        this.calculatedSide = 1;
+      }
+    }
+
+    if (this.calculatedSide !== this.currentSide) {
+      this.currentSide = this.calculatedSide;
+      this.emit('sideChange');
+    }
+
+  }
+
+
+   
+ 
+ 
+
+  this.element.style[userPrefix.js + 'Transform'] = 'rotateX(' + this.positionY + 'deg) rotateY(' + this.positionX + 'deg)';
+ 
+      document.cookie = 'poz_x_def='+this.positionX ;
+	  document.cookie = 'poz_y_def='+this.positionY ;
+  
+
+
+   
+ 
+ 
+  
+  if (this.positionY != this.previousPositionY || this.positionX != this.previousPositionX) {
+    this.previousPositionY = this.positionY;
+    this.previousPositionX = this.positionX;
+
+    this.emit('rotate');
+
+  }
+
+};
+
+ 
+  
+ 
+var viewport = new Viewport({
+  element: document.getElementsByClassName('cube')[0],
+  fps: 20,
+  sensivity: .1,
+  sensivityFade: .93,
+  speed: 0.3,
+  touchSensivity: 1.2 });
+
+  
+ 
+ 
+ 
+function Cube(data) {
+  var self = this;
+
+  this.element = data.element;
+  this.sides = this.element.getElementsByClassName('side');
+
+
+  this.viewport = data.viewport;
+  this.viewport.on('rotate', function () {
+    self.rotateSides();
+  });
+  this.viewport.on('upsideDown', function (obj) {
+    self.upsideDown(obj);
+  });
+  this.viewport.on('sideChange', function () {
+    self.sideChange();
+  });
+}
+Cube.prototype.rotateSides = function () {
+  var viewport = this.viewport;
+  if (viewport.positionY > 90 && viewport.positionY < 270) {
+   
+    this.sides[0].getElementsByClassName('cube-image')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + (viewport.positionX + viewport.torqueX) + 'deg)';
+    this.sides[5].getElementsByClassName('cube-image')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + -(viewport.positionX + 180 + viewport.torqueX) + 'deg)';
+	
+	 
+	
+  } else {
+    this.sides[0].getElementsByClassName('cube-image')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + (viewport.positionX - viewport.torqueX) + 'deg)';
+    this.sides[5].getElementsByClassName('cube-image')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + -(viewport.positionX + 180 - viewport.torqueX) + 'deg)';
+
+  
+  }
+};
+Cube.prototype.upsideDown = function (obj) {
+
+  var deg = obj.upsideDown == true ? '180deg' : '0deg';
+  var i = 5;
+
+  while (i > 0 && --i) {
+    this.sides[i].getElementsByClassName('cube-image')[0].style[userPrefix.js + 'Transform'] = 'rotate(' + deg + ')';
+ 
+  }
+
+};
+Cube.prototype.sideChange = function () {
+
+  for (var i = 0; i < this.sides.length; ++i) {
+    this.sides[i].getElementsByClassName('cube-image')[0].className = 'cube-image';
+  }
+
+  this.sides[this.viewport.currentSide - 1].getElementsByClassName('cube-image')[0].className = 'cube-image active';
+
+};
+
+new Cube({
+  viewport: viewport,
+  element: document.getElementsByClassName('cube')[0] });
+//# sourceURL=pen.js
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
+  <a href="index.php.html"><img src="img/logo.png" id="logo_2"></a>    
+ 
+ 
+ 
+<div id="right_side_box">
+
+ 
+
+<div id="scene_box">
+<div id="scene_1"><a href="updkonfig.php%3Fid=1&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;kote=1.html"><img src="icons/kote.png" id="scene_icon"></a></div>
+
+<div id="scene_1"><img src="img/open.png" id="scene_icon" onMouseOver="open_door()" ></div>
+<div id="scene_1"><img src="img/close.png" id="scene_icon" onMouseOver="close_door()"></div>
+</div>
+
+
+
+
+
+
+
+<div id="scene_box">
+<div id="scene_1"><a href="updkonfig.php%3Fkon_id=29573&amp;&amp;view=3D.html"><img src="img/prikaz_1.png" id="scene_icon"></a></div>
+<div id="scene_1"><a href="updkonfig.php%3Fkon_id=29573&amp;&amp;view=SCENA_1.html"><img src="img/prikaz_2.png" id="scene_icon"></a></div>
+<div id="scene_1"><a href="updkonfig.php%3Fkon_id=29573&amp;&amp;view=SCENA_2.html"><img src="img/prikaz_3.png" id="scene_icon"></a></div>
+<div id="scene_1"><a href="updkonfig.php%3Fkon_id=29573&amp;&amp;view=SCENA_3.html"><img src="img/prikaz_2.png" id="scene_icon"></a></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+     
+
+ 
+ 
+
+<a href="updkonfig.php%3Fid=1&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;kote=0.html">
+<div id="add_cart_btn">
+<div id="add_1">&#163; 0.00</div>
+<div id="add_2">+</div>
+</div></a>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="postavke" style="display:none;"> 
+
+FINISH 
+<form action="https://konfigurator.ba/demo_windows/doors/updmodel1.php" method="post">
+<input name="id" type="hidden" value="267"/ />
+<input name="finish" type="text" value="1" id="fild_100"/>
+</form>	
+
+Rukohvat
+<form action="https://konfigurator.ba/demo_windows/doors/updmodel1.php" method="post">
+<input name="id" type="hidden" value="267"/ />
+<input name="standard_r" type="text" value="106" id="fild_100"/>
+</form>	
+Mat 1
+<form action="https://konfigurator.ba/demo_windows/doors/updmodel1.php" method="post">
+<input name="id" type="hidden" value="267"/ />
+<input name="mat1" type="text" value="1" id="fild_100"/>
+</form>	
+
+Mat 2
+<form action="https://konfigurator.ba/demo_windows/doors/updmodel1.php" method="post">
+<input name="id" type="hidden" value="267"/ />
+<input name="mat2" type="text" value="0" id="fild_100"/>
+</form>	
+	
+Dvobojni	
+<form action="https://konfigurator.ba/demo_windows/doors/updmodel1.php" method="post">
+<input name="id" type="hidden" value="267"/ />
+<input name="dvobojni" type="text" value="0" placeholder="Dvobojni" id="fild_100"/>
+ </form>	
+Aplikacija	
+<form action="https://konfigurator.ba/demo_windows/doors/updmodel1.php" method="post">
+<input name="id" type="hidden" value="267"/ />
+<input name="aplikacija" type="text" value="0" placeholder="Aplikacija" id="fild_100"/>
+</form>	
+
+		
+css 
+<form action="https://konfigurator.ba/demo_windows/doors/updmodel1.php" method="post">
+<input name="id" type="hidden" value="267"/ />
+<input name="dizajn_css" type="text" value="0403GC.php" id="fild_100"/>
+</form>	
+
+</div>
+
+
+
+
+</div>
+<style type="text/css">
+
+@media (min-width: 1000px) {
+  
+#left_side{
+position:absolute;
+width:160px;
+height:100vh;
+left:0px;
+top:0px;
+text-align:center;
+z-index:9999999999;
+background: linear-gradient(148deg, rgba(24,32,48,0.9) 0%, rgba(45,54,71,0.8) 100%);
+z-index:9999999999;
+backdrop-filter: blur(14px);
+} 
+  
+
+
+
+#otvaranje_nav_box{
+width:100%;
+height:80px;
+display:inline-block;
+vertical-align:top;
+font-size:10px;
+text-align:center;
+margin-bottom:5px;
+}
+
+
+
+#open_naslov{
+color:#FFFFFF;
+font-size:12px;
+
+}
+
+
+.activ_btn{opacity:1;}
+
+
+#main_nav_1_desk{
+width:160px;
+height:40px;
+font-size:10px;
+color:#FFFFFF;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+vertical-align:top;
+line-height:0px;
+vertical-align:middle;
+margin-bottom:3px;
+position:relative;
+}
+
+
+#main_nav_1_desk:hover{background:#177CAF;}
+
+
+
+
+#nav_icon_desk{
+width:28px;
+height:28px;
+display:inline-block;
+vertical-align:top;
+text-align:center; 
+display:inline-block;
+position:absolute;
+left:5px;
+top:5px;
+}
+
+
+#nav_icon_desk:hover{opacity:1;}
+
+#title_nav{
+height:40px;
+line-height:12px;
+text-align:left; 
+position:absolute;
+left:40px;
+width:calc(100% - 40px);
+padding-top:14px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height:23px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background:rgba(255,255,255,0.1);
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background:#177CAF;
+  border-radius:5px;
+}
+
+ 
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+
+
+ 
+#sec_nav_desk{
+
+width:240px;
+height:100vh;
+position:absolute;
+left:160px;
+top:0px;
+ 
+font-family:Arial, Helvetica, sans-serif;
+color:#FFFFFF; 
+ padding-top:100px;
+overflow-y: scroll;
+
+border-left:#177CAF solid 1px;
+
+background: linear-gradient(148deg, rgba(24,32,48,0.6) 0%, rgba(45,54,71,0.8) 100%);
+z-index:9999999999;
+backdrop-filter: blur(4px);
+} 
+
+
+#nav_icon_sec{
+height:110px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:15px;
+margin-right:50px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+
+#nav_typ_box{
+width:96%;
+text-align:center;
+height:60px;
+}
+
+#nav_typ{
+height:40px;
+vertical-align:top;
+text-align:center;
+margin:10px;
+
+}
+
+#nav_typ2{
+height:80px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:10px;
+
+}
+
+#nav_prod{
+height:80px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:10px;
+
+}
+
+
+#nav_open{
+height:60px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:0px;
+
+}
+
+
+
+#nav_open1{
+widows:35px;
+height:35px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:0px;
+}
+
+#nav_open1:hover{
+opacity:0.8;
+}
+
+
+
+
+.activ_btn{background:#BB1E47; }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+  
+  
+  
+ #construct_div{
+ width:180px;
+ color:#FFFFFF;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:10px;
+ display:inline-block;
+ text-align:center;
+
+ } 
+  
+  
+  
+#materials_div_alu{
+width:64px;
+height:80px;
+display:inline-block;
+vertical-align:top;
+margin:2px;
+text-align:center;
+font-size:10px; 
+position:relative;
+
+}
+
+
+#ral_icon{
+width:40px;
+height:40px;
+display:inline-block;
+vertical-align:top;
+margin:0px; 
+padding:0px; 
+border-radius:66px;
+border:#FFFFFF solid 1px;
+  
+}
+
+ 
+
+
+#dim_box{
+width:180px;
+height:80px;
+font-size:12px;
+text-align:center;
+display:inline-block;
+vertical-align:top;
+color:rgba(255,255,255,0.5);
+}
+
+#dim_input{
+width:160px;
+font-size:14px;
+text-align:center;
+height:40px;
+background:rgba(255,255,255,0.3);
+color:#FFFFFF;
+border-radius:10px;
+border:none;
+margin-top:8px;
+}
+ 
+ 
+#ext_input{
+width:200px;
+font-size:12px;
+text-align:left;
+height:32px;
+background:rgba(255,255,255,0.7);
+color:#000000;
+border-radius:3px;
+border:none;
+margin-top:8px;
+}
+ 
+ 
+ 
+  #door_div_nav{
+width:80px;
+height:100px;
+display:inline-block;
+vertical-align:top;
+margin:5px;
+padding:5px;
+font-size:11px;
+text-align:center;
+line-height:0px;
+position:relative;
+}
+
+  
+#door2_foto{
+width:50px;
+height:88px;
+margin:0px;
+padding:0px;
+border:rgba(255,255,255,0.2) solid 1px;
+} 
+
+
+#door2_foto:hover{opacity:0.8;}
+
+#model_chec{
+position:absolute;
+left:36px;
+top:40px;
+width:22px;
+} 
+ 
+ #kvake_div{
+width:130px;
+height:60px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+font-size:11px;
+text-align:center;
+line-height:14px;
+position:relative;
+
+}
+
+
+
+#kvaka_foto{
+height:90px;
+margin:0px;
+padding:0px;
+} 
+
+ 
+#dimenzije{
+width:100%;
+overflow-x: auto;
+ 
+} 
+
+#hand_mob{display:none;}
+
+#arr_left{
+position:absolute;
+left:40px;
+top:30px;
+height:80px;
+}
+
+#arr_rig{
+position:absolute;
+right:40px;
+top:30px;
+height:80px;
+}
+ 
+ 
+ 
+#glass_div{
+width:130px;
+height:80px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+border-radius:10px;
+font-size:11px;
+text-align:center;
+line-height:14px;
+position:relative;
+}
+
+
+#glass_div_2{
+width:130px;
+height:100px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+border-radius:10px;
+font-size:11px;
+text-align:center;
+line-height:14px;
+position:relative;
+}
+
+
+
+
+#hand_div{
+width:220px;
+height:130px;
+display:inline-block;
+vertical-align:top;
+margin-top:20px; 
+padding-top:6px;
+border-radius:3px;
+font-size:11px;
+text-align:left;
+line-height:0px;
+ position:relative;
+ 
+}
+
+ 
+ 
+ 
+ 
+  
+#hand_foto_nav{
+position:absolute;
+left:20px;
+top:24px;
+height:110px;
+margin:0px;
+padding:0px;
+} 
+
+
+#hand_naziv{
+position:absolute;
+left:120px;
+top:6px;
+height:20px;
+margin:0px;
+padding:0px;
+color:#333333;
+line-height:20px;
+text-align:left;
+} 
+a:link {
+  text-decoration: none;
+}
+
+
+#hand_sizeDSC{
+position:absolute;
+left:80px;
+top:26px;
+line-height:12px;
+margin:0px;
+padding:0px;
+color:#ffffff;
+text-align:left;
+ vertical-align:top;
+ font-size:12px;
+  width:120px;
+ 
+}
+
+
+
+#glass_foto{
+width:70px;
+height:56px;
+margin:0px;
+padding:0px;
+} 
+ 
+ 
+ #glass_foto_2{
+width:70px;
+height:76px;
+margin:0px;
+padding:0px;
+border-radius:6px;
+} 
+ 
+ 
+ 
+ 
+ 
+ #profil_foto{
+width:60px;
+height:60px;
+margin:0px;
+padding:0px;
+} 
+ 
+ 
+ 
+ 
+#glass_checD{
+position:absolute;
+left:52px;
+top:22px;
+width:24px;
+} 
+
+#glass_prod{
+position:absolute;
+left:calc(50% - 11px);
+top:44px;
+width:20px;
+} 
+ 
+ #check_prod{
+position:absolute;
+left:calc(50% - 11px);
+top:44px;
+width:20px;
+} 
+ 
+ #roll_drive_check{
+position:absolute;
+left:calc(50% - 11px);
+top:20px;
+width:20px;
+} 
+ 
+ 
+ 
+  #check_open{
+position:absolute;
+left:10px;
+top:10px;
+width:16px;
+} 
+  
+#materials_chec{
+position:absolute;
+left:22px;
+top:10px;
+width:20px;
+} 
+
+
+#hand_check{
+position:absolute;
+width:20px;
+height:20px;
+left:calc(50% - 10px);
+top:calc(50% - 10px);
+
+} 
+
+ 
+ 
+ #kick_div{
+width:200px;
+height:100px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+border-radius:10px;
+font-size:14px;
+text-align:center;
+line-height:0px;
+position:relative;
+}
+ 
+ 
+#kick_foto{
+width:150px;
+height:60px;
+margin:0px;
+padding:0px;
+} 
+ 
+#kick_chec{
+position:absolute;
+left:80px;
+top:10px;
+width:36px;
+} 
+ 
+  
+ 
+ 
+#hand_foto{
+width:100px;
+height:100px;
+display:inline-block;
+} 
+
+
+#hand_foto:hover{
+opacity:0.8;
+} 
+
+#hand_naziv{
+position:absolute;
+left:120px;
+top:6px;
+height:20px;
+margin:0px;
+padding:0px;
+color:#333333;
+line-height:20px;
+text-align:left;
+} 
+a:link {
+  text-decoration: none;
+}
+a:hover{
+opacity:0.8;
+}
+
+#hand_size{
+position:absolute;
+left:120px;
+top:26px;
+
+line-height:4px;
+margin:0px;
+padding:0px;
+color:#111111;
+text-align:left;
+ vertical-align:top;
+ font-size:13px;
+}
+
+
+#size_list{
+height:22px;
+ 
+}
+
+
+
+#kvaka_foto{
+height:30px;
+margin:0px;
+padding:0px;
+} 
+
+#kvaka_chec{
+position:absolute;
+left:50px;
+top:10px;
+width:22px;
+}
+
+
+
+ 
+
+#hand_chec{
+position:absolute;
+left:52px;
+top:22px;
+width:26px;
+}  
+
+
+
+#nav_ral_box{
+width:100%;
+margin-bottom:30px;
+font-size:12px;
+}
+
+
+ 
+ 
+#hand_grp{
+display:inline-block;
+vertical-align:top;
+ padding-left:20px;
+padding-right:20px;
+
+} 
+
+
+#acc_grp{
+display:inline-block;
+vertical-align:top;
+border-right:rgba(255,255,255,0.2) solid 2px;
+padding-left:2px;
+padding-right:2px;
+margin-left:2px;
+margin-right:2px;
+ width:100%;
+} 
+
+
+
+#roz_div{
+width:80px;
+height:80px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:10px; 
+ font-size:11px;
+text-align:center;
+position:relative;
+ }
+ 
+ 
+ 
+ #hing_div{
+width:150px;
+height:130px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:10px; 
+border-radius:10px;
+font-size:11px;
+text-align:center;
+line-height:0px;
+position:relative;
+ 
+}
+ 
+ 
+#hing_foto{
+width:120px;
+height:80px;
+margin:0px;
+padding:0px;
+display:inline-block;
+} 
+
+
+#acc_foto{
+height:60px;
+margin:0px;
+padding:0px;
+display:inline-block;
+}
+ 
+ 
+ #acc_roz{
+width:80px;
+margin:0px;
+padding:0px;
+display:inline-block;
+background:#177CAF;
+}
+ 
+ #roz_chec{
+position:absolute;
+left:26px;
+top:15px;
+width:26px;
+}
+ 
+#acc_chec{
+position:absolute;
+left:58px;
+top:15px;
+width:26px;
+}
+ 
+#hing_chec{
+position:absolute;
+left:46px;
+top:28px;
+width:36px;
+}
+
+
+
+#sec_naslov{
+color:#FFFFFF;
+font-size:13px;
+
+}
+
+
+#sec_naslov2{
+color:#FFFFFF;
+font-size:13px;
+text-align:left;
+padding-left:10px;
+padding-top:20px;
+}
+
+
+
+
+#desk_color1{
+width:100px;
+height:40px;
+line-height:40px;
+position:absolute;
+left:10px;
+top:30px;
+color:#FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+border-radius: 10px;
+font-size:11px;
+background: linear-gradient(145deg, #3f484a, #353c3e);
+ z-index:99999999;
+}
+
+#desk_color2{
+width:100px;
+height:40px;
+line-height:40px;
+position:absolute;
+left:120px;
+top:30px;
+font-size:11px;
+color:#FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+text-align:center;
+
+border-radius: 10px;
+background: linear-gradient(145deg, #3f484a, #353c3e);
+ z-index:99999999;
+ 	 
+}
+ 
+ 
+#handcheck{
+width:14px;
+
+} 
+ 
+ 
+ 
+ #f_box{
+ width:100%;
+ height:60px;
+ position:relative;
+ }
+ 
+ 
+  #f_num{
+ position:absolute;
+ width:140px;
+ height:40px;
+top:10px;
+right:10px; 
+line-height:40px;
+
+}
+
+  #f_icon{
+ position:absolute;
+  height:40px;
+top:10px;
+left:10px; 
+line-height:40px;
+
+}
+
+#f_minus{
+position:absolute;
+height:20px;
+top:10px;
+left:10px; 
+line-height:40px;
+}
+
+#f_plus{
+position:absolute;
+height:20px;
+top:10px;
+right:10px; 
+line-height:40px;
+}
+ 
+ 
+#f_minus:hover{
+opacity:0.8;
+}
+#f_plus:hover{
+opacity:0.8;
+}
+
+
+#prod{
+width:90%;
+height:100px;
+margin-bottom:10px;
+font-size:11px;
+position:relative;
+}
+
+#open_box1{
+width:35px;
+height:50px;
+margin:1px;
+font-size:10px;
+position:relative;
+display:inline-block;
+vertical-align:top;
+}
+
+
+
+
+#models{
+width:160px;
+height:130px;
+margin:4px;
+font-size:11px;
+display:inline-block;
+vertical-align:top;
+position:relative;
+}
+
+
+
+#roll_drive{
+width:60px;
+height:80px;
+margin:4px;
+font-size:11px;
+display:inline-block;
+vertical-align:top;
+position:relative;
+}
+
+ 
+ 
+
+#roll_drive_foto{
+width:50px;
+height:50px;
+}
+
+
+
+
+#tip_box{
+width:100%;
+height:60px;
+margin:6px;
+display:block;
+text-align:center;
+position:relative;
+ 
+}
+
+
+#tip_prod{
+position:absolute;
+top:22px;
+width:26px;
+left:calc(50% - 13px);
+} 
+
+
+
+
+#closenav{
+position:absolute;
+top:10px;
+right:10px;
+width:30px;
+
+}
+
+
+
+
+
+ 
+ #img_glass{
+ width:50px;
+ height:60px;
+
+ }
+ 
+ 
+  
+#griff_img2{
+width:72px;
+padding:2px;
+}
+
+
+
+
+#doplata_img{
+position:relative;
+ width:90%;
+ border-bottom:#DBDBDB dotted 1px;
+ display:inline-block;
+ padding:2px;
+ margin:1px; 
+ vertical-align:top;
+ font-size:11px;
+ text-align:left;
+ color:#FFFFFF;
+ height:34px;
+ line-height:34px;
+}
+
+
+
+
+ #chec1{
+ position:absolute;
+ left:0px;
+ top:4px;
+ width:20px;
+ }
+	
+
+
+
+ #chec_txt{
+ position:absolute;
+ left:30px;
+ top:4px;
+ width:calc(100% - 30px);
+ }	
+
+
+
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  
+ #left_side{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  z-index: 9999999999;
+  background: linear-gradient(148deg, rgba(24,32,48,0.9) 0%, rgba(45,54,71,0.8) 100%);
+  backdrop-filter: blur(14px);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+ 
+ 
+#dscnav{
+
+width:100%;
+height:160px;
+top:0px;
+overflow-x: auto;
+overflow-y: hidden;
+ white-space: nowrap;
+ border-bottom:rgba(0,0,0,0.4) groove 2px;
+
+} 
+
+
+
+
+#sec_nav_desk{
+
+width:100%;
+height:180px;
+position:absolute;
+left:0px;
+top:180px;
+ 
+font-family:Arial, Helvetica, sans-serif;
+color:#FFFFFF; 
+overflow-x: scroll;
+ 
+z-index:9999999999;
+   overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+} 
+
+
+
+/* Sakrij scrollbar ali zadrži scroll funkcionalnost */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Za Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Za IE/Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+
+
+#hand_div{
+display:none;
+}
+
+ 
+#hand_mob{
+display:block;
+display:inline-block;
+width:140px;
+height:130px;
+position:relative;
+text-align:center;
+ 
+ }
+
+  
+#hand_foto_nav{
+ 
+left:20px;
+top:0px;
+max-height:110px;
+max-width:130px;
+margin:0px;
+padding:0px;
+} 
+
+
+
+
+#nav_typ_box{
+text-align:center;
+display:inline-block;
+height:100px;
+margin-left:20px;
+margin-right:20px;
+margin-top:20px;
+}
+
+#nav_typ{
+height:96px;
+vertical-align:top;
+text-align:center;
+ 
+
+}
+ 
+  
+#closenav{display:none;}
+#small_logo{display:none;}
+
+
+
+#main_nav_1_desk{
+width:100px;
+height:80px;
+font-size:10px;
+color:#FFFFFF;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+vertical-align:top;
+line-height:0px;
+vertical-align:middle;
+margin-bottom:3px;
+position:relative;
+display:inline-block;
+vertical-align:top;
+border-radius:10px;
+margin-top:30px;
+margin-right:10px;
+ background: rgba(255, 255, 255, 0.2); /* bijela sa transparencijom */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* za Safari */
+  
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding:10px;
+}
+
+
+
+
+
+
+  
+ #construct_div{
+ width:180px;
+ color:#FFFFFF;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:10px;
+ display:inline-block;
+ text-align:center;
+
+ } 
+  
+
+
+
+
+#main_nav_1_desk:hover{background:#177CAF;}
+
+
+
+#nav_icon_desk{
+width:60px;
+height:60px;
+display:inline-block;
+vertical-align:top;
+text-align:center; 
+display:inline-block;
+margin-bottom:10px;
+
+}
+
+
+#nav_icon_desk:hover{opacity:1;}
+
+#sec_naslov{display:none;}
+
+
+
+
+
+
+ 
+#prod{
+width:160px;
+height:100px;
+font-size:11px;
+position:relative;
+display:inline-block;
+vertical-align:top;
+color:#FFFFFF;
+text-align:center;
+}
+
+
+
+
+#nav_prod{
+width:90px;
+height:90px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:10px;
+
+}
+
+
+ #check_prod{
+position:absolute;
+left:calc(50% - 11px);
+top:40px;
+width:30px;
+} 
+
+
+
+
+
+#models{
+width:160px;
+height:130px;
+margin:4px;
+font-size:11px;
+display:inline-block;
+vertical-align:top;
+position:relative;
+}
+
+
+
+
+#nav_typ2{
+height:80px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:10px;
+
+}
+
+
+
+
+
+#glass_prod{
+position:absolute;
+left:calc(50% - 11px);
+top:44px;
+width:30px;
+} 
+
+
+
+
+
+
+#glass_div_2{
+width:130px;
+height:100px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+border-radius:10px;
+font-size:11px;
+text-align:center;
+line-height:14px;
+position:relative;
+}
+
+
+ #glass_foto_2{
+width:90px;
+height:90px;
+margin:0px;
+padding:0px;
+border-radius:6px;
+} 
+ 
+
+
+#glass_div{
+width:150px;
+height:80px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+border-radius:10px;
+font-size:11px;
+text-align:center;
+line-height:14px;
+position:relative;
+
+}
+
+
+ #profil_foto{
+width:100px;
+height:100px;
+margin:0px;
+padding:0px;
+} 
+ 
+ 
+ 
+ 
+#glass_checD{
+position:absolute;
+left:50px;
+top:30px;
+width:30px;
+} 
+
+
+
+
+
+#glass_div_2{
+width:130px;
+height:100px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+border-radius:10px;
+font-size:11px;
+text-align:center;
+line-height:14px;
+position:relative;
+}
+
+
+
+
+ 
+#check_open{
+position:absolute;
+left:24px;
+top:20px;
+width:30px;
+} 
+
+
+#otvaranje_nav_box{
+width:520px;
+height:100px;
+display:inline-block;
+vertical-align:top;
+font-size:10px;
+text-align:center;
+margin-bottom:5px;
+border-right:#FFFFFF solid 1px;
+}
+
+
+
+#open_naslov{
+color:#FFFFFF;
+font-size:12px;
+
+}
+
+
+
+
+
+
+
+
+#open_box1{
+width:80px;
+height:80px;
+margin:1px;
+font-size:10px;
+position:relative;
+display:inline-block;
+vertical-align:top;
+}
+
+ 
+#nav_open1{
+widows:70px;
+height:70px;
+display:inline-block;
+vertical-align:top;
+text-align:center;
+margin:0px;
+}
+
+#nav_open1:hover{
+opacity:0.8;
+}
+
+
+
+
+
+#materials_div_alu{
+width:64px;
+height:80px;
+display:inline-block;
+vertical-align:top;
+margin:2px;
+text-align:center;
+font-size:10px; 
+position:relative;
+
+}
+
+
+#ral_icon{
+width:40px;
+height:40px;
+display:inline-block;
+vertical-align:top;
+margin:0px; 
+padding:0px; 
+border-radius:66px;
+border:#FFFFFF solid 1px;
+  
+}
+
+
+
+  
+#materials_chec{
+position:absolute;
+left:22px;
+top:10px;
+width:20px;
+} 
+
+
+
+#nav_ral_box{
+width:auto;
+margin-bottom:30px;
+font-size:12px;
+display:inline-block;
+vertical-align:top;
+padding-left:20px;
+padding-right:20px;
+border-right:#FFFFFF solid 1px;
+}
+
+
+
+
+
+
+
+#dim_box{
+width:180px;
+height:80px;
+font-size:12px;
+text-align:center;
+display:inline-block;
+vertical-align:top;
+color:rgba(255,255,255,0.5);
+}
+
+#dim_input{
+width:160px;
+font-size:14px;
+text-align:center;
+height:40px;
+background:rgba(255,255,255,0.3);
+color:#FFFFFF;
+border-radius:10px;
+border:none;
+margin-top:8px;
+}
+ 
+ 
+#ext_input{
+width:200px;
+font-size:12px;
+text-align:left;
+height:32px;
+background:rgba(255,255,255,0.7);
+color:#000000;
+border-radius:3px;
+border:none;
+margin-top:8px;
+}
+ 
+ 
+ 
+  
+ 
+ 
+#dimenzije{
+width:220px;
+display:inline-block;
+margin-top:22px;
+} 
+
+
+
+
+ #kvake_div{
+width:130px;
+height:60px;
+display:inline-block;
+vertical-align:top;
+margin-right:20px; 
+margin-top:20px; 
+font-size:11px;
+text-align:center;
+line-height:14px;
+position:relative;
+}
+
+
+
+#kvaka_foto{
+height:90px;
+margin:0px;
+padding:0px;
+} 
+
+
+
+#kvaka_chec{
+position:absolute;
+left:50px;
+top:30px;
+width:36px;
+}
+
+
+  #door_div_nav{
+width:80px;
+height:100px;
+display:inline-block;
+vertical-align:top;
+margin:5px;
+padding:5px;
+font-size:11px;
+text-align:center;
+line-height:0px;
+position:relative;
+}
+
+  
+#door2_foto{
+width:50px;
+height:88px;
+margin:0px;
+padding:0px;
+border:rgba(255,255,255,0.2) solid 1px;
+} 
+
+
+#door2_foto:hover{opacity:0.8;}
+
+#model_chec{
+position:absolute;
+left:36px;
+top:40px;
+width:22px;
+} 
+ 
+
+
+
+
+
+
+  
+}
+
+</style>
+
+
+
+<div id="left_side"> <!--  START  LEFT  -->
+<a href="index.php.html"><img src="img/h.png" id="small_logo"></a>
+
+
+<div id="dscnav" style="z-index:99999999999999999;">
+
+<a href="upd_nav.php%3Fid=12&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_12.png" id="nav_icon_desk" ><div id="title_nav">DOOR MODEL</div></div></a>
+<a href="upd_nav.php%3Fid=1&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" style="background:#177CAF;"> <img src="icons/nav_1.png" id="nav_icon_desk" style="opacity:1;"><div id="title_nav">CONSTRUCTION</div></div></a>
+<a href="upd_nav.php%3Fid=2&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_2.png" id="nav_icon_desk" ><div id="title_nav">DIMENSIONS</div></div></a>
+<a href="upd_nav.php%3Fid=3&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_3.png" id="nav_icon_desk" ><div id="title_nav">OPENING</div></div></a>
+<a href="upd_nav.php%3Fid=4&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_4.png" id="nav_icon_desk" ><div id="title_nav">EXTERNAL COLOUR</div></div></a>
+
+<a href="upd_nav.php%3Fid=13&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_4.png" id="nav_icon_desk" ><div id="title_nav">INTERNAL COLOUR</div></div></a>
+<a href="upd_nav.php%3Fid=5&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_5.png" id="nav_icon_desk" ><div id="title_nav">GLASS</div></div></a>
+<a href="upd_nav.php%3Fid=6&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_6.png" id="nav_icon_desk" ><div id="title_nav">EXTERNAL HANDLE</div></div></a>
+<a href="upd_nav.php%3Fid=7&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_7.png" id="nav_icon_desk" ><div id="title_nav">INTERNAL HANDLE</div></div></a>
+ 
+<!-- <a href="upd_nav.php?id=8&&s=c707de90ee77e5d07f00239f54b6828d&&pos1="><div id="main_nav_1_desk" > <img src="icons/nav_LS.png" id="nav_icon_desk" ><div id="title_nav">ACCESSORIES</div></div></a> -->
+<a href="upd_nav.php%3Fid=10&amp;&amp;s=c707de90ee77e5d07f00239f54b6828d&amp;&amp;pos1=.html"><div id="main_nav_1_desk" > <img src="icons/nav_9.png" id="nav_icon_desk" ><div id="title_nav">HINGES</div></div></a>
+ 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="sec_nav_desk" onscroll="scrollPos();"> 
+
+
+<img src="img/close_nav.png"  id="closenav" onMouseOver="closenav()" />
+
+
+
+
+ <p id="sec_naslov">CONSTRUCTION</p><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=1&amp;&amp;kon_id=29573.html"><img src="typ/t1.png" id="nav_typ"></a></div><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=2&amp;&amp;kon_id=29573.html"><img src="typ/t2.png" id="nav_typ"></a></div><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=3&amp;&amp;kon_id=29573.html"><img src="typ/t3.png" id="nav_typ"></a></div><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=26&amp;&amp;kon_id=29573.html"><img src="typ/t4.png" id="nav_typ"></a></div><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=27&amp;&amp;kon_id=29573.html"><img src="typ/t5.png" id="nav_typ"></a></div><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=28&amp;&amp;kon_id=29573.html"><img src="typ/t6.png" id="nav_typ"></a></div><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=29&amp;&amp;kon_id=29573.html"><img src="typ/t7.png" id="nav_typ"></a></div><div id="nav_typ_box"><a href="updkonfig.php%3Ftyp=30&amp;&amp;kon_id=29573.html"><img src="typ/t8.png" id="nav_typ"></a></div>	
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+ 
+
+	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+	
+ 
+
+
+ 
+	
+ 
+
+ 
+
+
+ 
+
+
+ 
+
+
+	
+ 
+
+
+
+ 
+
+ 
+
+
+
+ 	
+
+
+
+
+
+
+
+<p>&nbsp;</p><p>&nbsp;</p> <p>&nbsp;</p><p>&nbsp;</p> 
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+
+</div>
+
+
+
+
+
+
+<script>
+window.addEventListener("load", function () {
+  var el = document.getElementById("dscnav");
+  if (!el) return;
+
+  var key = "dscnav_scroll_" + window.location.pathname;
+
+  // vrati scroll poziciju nakon ucitavanja
+  var saved = localStorage.getItem(key);
+  if (saved !== null) {
+    setTimeout(function () {
+      el.scrollLeft = parseInt(saved, 10) || 0;
+    }, 100);
+  }
+
+  // spremaj dok scrolla
+  el.addEventListener("scroll", function () {
+    localStorage.setItem(key, el.scrollLeft);
+  });
+
+  // dodatno spremi prije refresh / izlaska
+  window.addEventListener("beforeunload", function () {
+    localStorage.setItem(key, el.scrollLeft);
+  });
+});
+</script>
+
+
+
+
+
+<script>
+window.addEventListener("load", function () {
+  var el = document.getElementById("sec_nav_desk");
+  if (!el) return;
+
+  var key = "sec_nav_desk_scroll_" + window.location.pathname;
+
+  // vrati scroll poziciju nakon ucitavanja
+  var saved = localStorage.getItem(key);
+  if (saved !== null) {
+    setTimeout(function () {
+      el.scrollLeft = parseInt(saved, 10) || 0;
+    }, 100);
+  }
+
+  // spremaj dok scrolla
+  el.addEventListener("scroll", function () {
+    localStorage.setItem(key, el.scrollLeft);
+  });
+
+  // dodatno spremi prije refresh / izlaska
+  window.addEventListener("beforeunload", function () {
+    localStorage.setItem(key, el.scrollLeft);
+  });
+});
+</script>
+
+
+
+
+
+</div> <!--  END LEFT  --> 
+ 
+ <script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var scrollpos = localStorage.getItem("scrollpos");
+    if (scrollpos) window.scrollTo(0, scrollpos);
+  });
+
+  window.onscroll = function (e) {
+    localStorage.setItem("scrollpos", window.scrollY);
+  };
+</script>
+
+</body>
+</html>
